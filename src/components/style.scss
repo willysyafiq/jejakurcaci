@@ -3,6 +3,13 @@
 
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
+
+@font-face {
+	font-family: "Regalis-Regular";
+	src: url("../fonts/regalis-regular.otf");
+}
 
 .gradientBg {
 	display: flex;
@@ -26,4 +33,48 @@
 	a:hover {
 		color: $secondary-color;
 	}
+}
+
+
+.project-listing{
+	padding-left: 4.5rem;
+	padding-right: 4.5rem;
+
+	.column{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.card{
+		box-shadow: none;
+		padding-left: 0;
+		margin-bottom: 1.75rem;
+	}
+
+	.card-content{
+		padding-top: 1.5rem;
+	}
+
+	.proj-cat{
+		font-family: 'Barlow';
+		color: $grey;
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 600;
+		margin-bottom: 12px;
+		letter-spacing: 1.6pt;
+	}
+	.proj-title{
+		font-family: 'Regalis-Regular';
+		color: $black;
+		font-size: 28px;
+		line-height: 32px;
+		font-weight: 500;
+	}
+
+	.featured-proj-title{
+		@extend .proj-title;
+		font-size: 40px;
+		line-height: 44px;
+	}
+
 }
