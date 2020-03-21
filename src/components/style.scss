@@ -11,9 +11,42 @@
 	src: url("../fonts/regalis-regular.otf");
 }
 
-.gradientBg {
+#hero-bottom{
 	display: flex;
-	background: linear-gradient(to right, $primary-color, $secondary-color);
+	align-items: flex-end;
+	margin-bottom: 4rem;
+}
+
+
+.hero-title{
+	font-family: "Regalis-Regular";
+	font-size: 55px !important;
+	line-height: 60px !important;
+	font-weight: 400 !important;
+	padding-top: 8rem;
+}
+
+.hero-image {
+	display: flex;
+	background: url("../images/hero-1.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.hero-back{
+	padding-top: 1.25rem;
+}
+
+.right{
+	display: flex;
+   	flex-direction: row;
+   	justify-content: flex-end;
+}
+
+.top{
+	display: flex;
+	align-content: flex-start;
 }
 
 .center {
@@ -77,4 +110,53 @@
 		line-height: 44px;
 	}
 
+	.featured-heading{
+		border-bottom: 1px solid $black;
+		h2{
+			font-family: 'Regalis-Regular';
+			font-size: 48px;
+			line-height: 60px;
+		}
+		padding-bottom: 12px;
+		margin-bottom: 42px;
+		button{
+			font-family: 'Barlow';
+			font-size: 20;
+			line-height: 24px;
+			color: $black;
+			border: 1px solid $black;
+			border-radius: 0;
+			.icon{
+				color: $black;
+			}
+		}
+	}
+
+}
+
+.navbar, .navbar-brand, .navbar-mid, .navbar-end{
+	height: 64px;
+	padding: 12px;
+	background: transparent;
+	border-bottom: 1px solid $black;
+	margin-bottom: 0px;
+}
+
+.secondrow{
+	.navbar-item, .navbar-end{
+		padding-top: 24px;
+		padding-bottom: 0;
+		height: 32px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.navbar, .navbar-brand, .navbar-mid, .navbar-end{
+		border: none;
+	}
+}
+
+.brand-logo{
+	height: 36px;
 }
