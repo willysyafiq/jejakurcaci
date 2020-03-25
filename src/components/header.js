@@ -1,10 +1,7 @@
 import React from 'react';
-import { FaGithub, FaBackward, FaLongArrowAltLeft, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-
 import './style.scss';
-
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
+import ArrowLBlack from '../images/arrow-left-black.svg';
+import ArrowRBlack from '../images/arrow-right-black.svg';
 import Navbar from './navbar';
 
 const Header = ({ siteTitle }) => (
@@ -14,11 +11,9 @@ const Header = ({ siteTitle }) => (
 			<div className="container" id="hero-bottom">
 				<div className="columns level">
 					<div className="column level-left">
-							<div className="columns is-vcentered">
-								<div className="column is-narrow hero-back">
-									<span className="icon has-text-black">
-										<FaArrowLeft size="fa-2x" />
-									</span>
+							<div className="columns is-vcentered is-variable is-7-desktop">
+								<div className="column is-narrow">
+									<img className="image arrow-hero" src={ArrowLBlack} alt="Arrow Left" />
 								</div>
 								<div className="column">
 									<h1 className="hero-title has-text-black">
@@ -29,10 +24,8 @@ const Header = ({ siteTitle }) => (
 					</div>
 					<div className="column level-right">
 						<div className="columns right is-vcentered">
-							<div className="column is-one-quarter hero-back">
-								<span className="icon has-text-black">
-									<FaArrowRight size="fa-2x" />
-								</span>
+							<div className="column is-one-quarter">
+								<img className="image arrow-hero" src={ArrowRBlack} alt="Arrow Right" />
 							</div>
 						</div>
 					</div>

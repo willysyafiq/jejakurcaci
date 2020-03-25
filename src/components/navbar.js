@@ -2,32 +2,33 @@ import React from 'react';
 import { FaSearch, FaBars, FaInstagram, FaFacebook, FaTwitter, FaPinterest } from 'react-icons/fa';
 
 import './style.scss';
-// import gatsbyLogo from '../images/gatsby-icon.png';
-// import bulmaLogo from '../images/bulma-logo.png';
+import BrandLogo from '../images/logo-center.png';
+import SearchBlack from '../images/search-black.svg';
+import PinterestBlack from '../images/pinterest-black.svg';
+import FacebookBlack from '../images/facebook-black.svg';
+import InstagramBlack from '../images/instagram-black.svg';
 
 const Navbar = () => (
 	<nav className="is-hidden-mobile">
-		<nav className="navbar">
+		<nav className="navbar border-bottom">
 			<div className="container">
 				<div className="navbar-menu columns">
-					<div className="column navbar-brand">
-						<a className="navbar-item" href="#">
+					<div className="column navbar-brand is-5">
+						{/* <a className="navbar-item" href="#">
 							<span className="icon has-text-black center">
 								<FaBars size="fa-2x" />
 							</span>
-						</a>
+						</a> */}
 					</div>
 					<div className="column navbar-mid">
 						<a href="#">
-							<img className="image brand-logo" src="https://via.placeholder.com/160x60" alt="Logo-1" />	
+							<img className="image brand-logo" src={BrandLogo} alt="Brand Logo" />	
 						</a>
 					</div>
 					<div className="navbar-end">
 						<span className="navbar-item">
 							<a href="#">
-								<span className="icon has-text-black">
-									<FaSearch size="fa-2x" />
-								</span>
+								<img className="image brand-logo" src={SearchBlack} alt="Search Icon" />	
 							</a>
 						</span>
 					</div>
@@ -41,23 +42,17 @@ const Navbar = () => (
 					<div className="navbar-end">
 						<span className="navbar-item">
 							<a href="#">
-								<span className="icon has-text-black">
-									<FaInstagram size="fa-2x" />
-								</span>
+								<img className="image social-logo" src={InstagramBlack} alt="Instagram Icon" />	
 							</a>
 						</span>
 						<span className="navbar-item">
 							<a href="#">
-								<span className="icon has-text-black">
-									<FaFacebook size="fa-2x" />
-								</span>
+								<img className="image social-logo" src={FacebookBlack} alt="Facebook Icon" />
 							</a>
 						</span>
 						<span className="navbar-item">
 							<a href="#">
-								<span className="icon has-text-black">
-									<FaPinterest size="fa-2x" />
-								</span>
+								<img className="image social-logo" src={PinterestBlack} alt="Pinterest Icon" />
 							</a>
 						</span>
 					</div>

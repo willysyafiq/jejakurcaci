@@ -15,6 +15,7 @@
 	display: flex;
 	align-items: flex-end;
 	margin-bottom: 4rem;
+	padding-left: 3rem;
 }
 
 
@@ -34,8 +35,17 @@
 	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.hero-back{
-	padding-top: 1.25rem;
+.arrow-hero{
+	width: 56px;
+	padding-top: 1.75rem;
+}
+
+.see-all{
+	height: 20px;
+	margin-left: 8px;
+	// padding-right: 1.5rem;
+	// padding-top: 4px;
+	// padding-bottom: 1rem;
 }
 
 .right{
@@ -138,8 +148,12 @@
 	height: 64px;
 	padding: 12px;
 	background: transparent;
-	border-bottom: 1px solid $black;
+	// border-bottom: 1px solid $black;
 	margin-bottom: 0px;
+}
+
+.border-bottom{
+	border-bottom: 1px solid $black;
 }
 
 .secondrow{
@@ -159,4 +173,24 @@
 
 .brand-logo{
 	height: 36px;
+}
+
+.social-logo{
+	height: 24px;
+}
+
+
+// Side Menu Section
+.side-menu{
+	max-width: 56px;
+	background: $green;
+	.section{
+		padding-top: 24px;
+		padding-left: .75rem;
+		padding-right: .75rem;
+	}
+}
+
+.menu-icon{
+	// width: 32px !important;
 }

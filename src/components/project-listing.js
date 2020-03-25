@@ -5,7 +5,8 @@ import featured2 from '../images/image-2.png';
 import featured3 from '../images/image-3.png';
 import featured4 from '../images/image-4.png';
 import featured5 from '../images/image-5.png';
-import { FaArrowRight } from 'react-icons/fa';
+import ArrowRBlack from '../images/arrow-right-black.svg';
+// import { FaArrowRight } from 'react-icons/fa';
 
 const ProjectListing = () => (
 	
@@ -16,8 +17,8 @@ const ProjectListing = () => (
             </div>
             <div className="level-right">
                 <button class="button is-normal level-item">
-                    <span>ALL PHOTOGRAPHY</span>
-                    <span className="icon"><FaArrowRight size="fa-1x" /></span>
+                    ALL PHOTOGRAPHY
+                    <img className="image see-all" src={ArrowRBlack} alt="Arrow Right" />	
                 </button>
             </div>
         </div>
