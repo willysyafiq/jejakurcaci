@@ -6,11 +6,31 @@ import featured3 from '../images/image-3.png';
 import featured4 from '../images/image-4.png';
 import featured5 from '../images/image-5.png';
 import ArrowRBlack from '../images/arrow-right-black.svg';
-// import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'gatsby';
 
-const ProjectListing = () => (
+const ListingLove = ({ title, author, category, path, date, body }) => { 
+    return( 
+        
+        <div className="column is-3">
+            <div className="card-image">
+                <div className="image">
+                    <Link to="/404">
+                        <img src={featured2} alt=""></img>
+                    </Link>
+                </div>
+            </div>
+            <div className="card card-content">
+                <p className="proj-cat">{category}</p>
+                <p className="proj-title">
+                    {title}
+                </p>
+            </div>
+        </div>
+        
+    )
+}
 	
-    <section className="section project-listing">
+    {/* <section className="section project-listing">
         <div className="level featured-heading">
             <div className="level-left">
                 <h2 className="is-size-2 level-item">Recent Works</h2>
@@ -89,8 +109,14 @@ const ProjectListing = () => (
                 </div>
             </div>
         </div>
-    </section>
 
-);
+    </section> */}
 
-export default ProjectListing;
+   
+
+    
+
+// );
+
+export default ListingLove;
+
