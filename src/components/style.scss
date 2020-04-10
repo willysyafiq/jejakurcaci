@@ -9,6 +9,9 @@
 @font-face {
 	font-family: "Regalis-Regular";
 	src: url("../fonts/regalis-regular.otf");
+
+	font-family: "Regalis-SemiCond";
+	src: url("../fonts/regalis-semicond.otf");
 }
 
 #hero-bottom{
@@ -202,4 +205,68 @@
 
 .menu-icon{
 	// width: 32px !important;
+}
+
+
+
+// Single Post styling
+.post-title{
+	padding-top: 4rem;
+	padding-left: 10%;
+	padding-right: 10%;
+	h1{
+		font-family: 'Regalis-Regular';
+		font-size: 55px;
+		line-height: 60px;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	p{
+		font-family: 'Barlow';
+		color: $grey;
+		font-size: 12px;
+		line-height: 1.5;
+		font-weight: 600;
+		margin-bottom: 12px;
+		letter-spacing: 1pt;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.featured-image{
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.proj-date{
+	font-family: 'Barlow';
+	color: $dark-grey;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: 600;
+	letter-spacing: 1pt;
+}
+
+.proj-hour{
+	@extend .proj-date;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.author{
+	@extend .proj-date;
+	text-align: right;
+	font-weight: 500;
+}
+
+.body-post{
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	p {
+		font-family: 'Regalis-SemiCond';
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
 }

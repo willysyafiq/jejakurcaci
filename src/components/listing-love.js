@@ -14,7 +14,7 @@ const ListingLove = ({ title, author, category, path, date, body }) => {
         <div className="column is-3">
             <div className="card-image">
                 <div className="image">
-                    <Link to="/404">
+                    <Link to="/post">
                         <img src={featured2} alt=""></img>
                     </Link>
                 </div>

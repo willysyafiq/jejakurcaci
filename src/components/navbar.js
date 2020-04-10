@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaSearch, FaBars, FaInstagram, FaFacebook, FaTwitter, FaPinterest } from 'react-icons/fa';
-
 import './style.scss';
+import { Link } from 'gatsby';
+
 import BrandLogo from '../images/logo-center.png';
 import SearchBlack from '../images/search-black.svg';
 import PinterestBlack from '../images/pinterest-black.svg';
@@ -21,9 +21,9 @@ const Navbar = () => (
 						</a> */}
 					</div>
 					<div className="column navbar-mid">
-						<a href="#">
+						<Link to="/">
 							<img className="image brand-logo" src={BrandLogo} alt="Brand Logo" />	
-						</a>
+						</Link>
 					</div>
 					<div className="navbar-end">
 						<span className="navbar-item">

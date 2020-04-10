@@ -1,9 +1,8 @@
 import React from 'react';
-import Layout from '../components/layout';
-
+import LayoutHome from '../components/layout-home';
 
 const IndexPage = () => (
-<Layout></Layout>
+<LayoutHome></LayoutHome>
 )
 
 

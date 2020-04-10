@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.scss';
 import Helmet from './helmet';
-import Header from './header';
-import Footer from './footer';
+import HeroSlider from './hero-slider';
 import SideMenu from './side-menu';
+import Navbar from './navbar';
 import ListingLove from './listing-love';
 import { graphql, StaticQuery } from 'gatsby';
 import ArrowRBlack from '../images/arrow-right-black.svg';
@@ -11,7 +11,7 @@ import { Link } from 'gatsby';
 
 
 
-const Layout = ({ children }) => (
+const LayoutHome = ({ children }) => (
 	<div className="columns is-gapless">
 		<div className="column side-menu">
 			<SideMenu/>
@@ -19,7 +19,10 @@ const Layout = ({ children }) => (
 		<div className="column is-rest">	
 
 			<Helmet />
-			<Header />
+			<section className="hero hero-image is-fullheight">
+				<Navbar />
+				<HeroSlider/>
+			</section>
 
 			<section className="section project-list-title">
 				<div className="level featured-heading">
@@ -80,4 +83,4 @@ const indexQuery = graphql`
 `
 
 
-export default Layout;
+export default LayoutHome;
