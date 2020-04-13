@@ -1,10 +1,15 @@
 // Importing variables
 @import './variables.scss';
 
+// Importing React Burger Menu
+@import './react-burger-menu.scss';
+
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
+
+
 
 @font-face {
 	font-family: "Regalis-Regular";
@@ -12,6 +17,9 @@
 
 	font-family: "Regalis-SemiCond";
 	src: url("../fonts/regalis-semicond.otf");
+
+	font-family: "Regalis-Medium";
+	src: url("../fonts/regalis-medium.otf");
 }
 
 #hero-bottom{
@@ -196,16 +204,163 @@
 .side-menu{
 	max-width: 56px;
 	background: $green;
-	.section{
-		padding-top: 24px;
-		padding-left: .75rem;
-		padding-right: .75rem;
+	border-right: 1px solid $black;
+
+	.chevron-menu{
+		height: 20px;
+		display: inline-block;
+		margin-top: 4px;
 	}
+
+	.first-half{
+		padding-top: 64px;
+		// background-color: $darkest-green;
+		// border-top: 300px solid $darkest-green;
+		// margin-top: -300px;
+		// border-bottom: 600px solid $darkest-green;
+		// margin-bottom: -600px;
+		// border-left: 100px solid $darkest-green;
+		// margin-left: -100px;
+	}
+
+	.second-half{
+		position: fixed;
+		width: 68px;
+		background: $medium-green;
+		height: 100vh;
+		top: -68px;
+		top: 0;
+		right: 0;
+		border-left: 1px solid $white;
+	}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		text-align: left;
+		// z-index: 2;
+
+	}
+
+
+	nav li{
+		display: block;
+		a{
+			font-family: 'Regalis-Medium';;
+			font-size: 1.875rem;
+			line-height: 1.53;
+			letter-spacing: 1.5px;
+			margin-bottom: .5rem;
+			padding-top: 1rem;
+		}
+	}
+
+	nav li:hover, nav li:active{
+		border-bottom: 1px solid $white;
+		
+		a{color: $gold;}
+	}
+
+	no-bot-border:hover{
+		border-bottom: 0px solid $white;
+	}
+
+
+	nav a{
+		display: inline-block;
+		
+	}
+
+	.menu-sub{
+		position: absolute;
+		left: 30%;
+		width: 100%;
+		display: none;
+		padding: 2em 2em 2em 2em;
+		li{
+			border-bottom: 1px solid $white;
+			margin-right: 84px;
+		}
+
+		margin-left: 120px;
+
+		
+
+		// background: $darker-green;
+		// border-top: 300px solid $darker-green;
+		// margin-top: -300px;
+		// border-bottom: 600px solid $darker-green;
+		// margin-bottom: -600px;
+		// position: absolute;
+   		// z-index: -1;
+	}
+
+	.menu-sub:first-of-type{
+		padding-top: 0;
+	}
+
+	nav li:hover .menu-sub {
+		display: block;
+		a{
+			font-size: 1.625rem;
+			line-height: 1.73;
+			color: $white;
+		}
+
+		a:hover{
+			color: $gold;
+		}
+
+		a:first-of-type{
+			padding-top: 8px;
+		}
+
+		.block-highlight{
+			border-bottom: 0px solid $white;
+			background: $darker-green;
+		}
+		.read-more{
+			font-family: 'Barlow';
+			font-size: 1rem;
+			font-weight: 300;
+			font-style: normal;
+			letter-spacing: 2.25px;
+			color: $white;
+			border-bottom: 1px solid $white;
+		  }
+
+		.title{
+			font-family: 'Regalis-SemiCond';
+			color: $white;
+			font-size: 1.563rem;
+			line-height: 1.2;
+			background: none;
+			margin-bottom: .5rem;
+		}
+
+		.highlight{
+			font-family: 'Barlow';
+			font-size: 0.813rem;
+			color: $white;
+			font-weight: 600;
+			line-height: 2;
+			padding-top: 1rem;
+			  letter-spacing: 1.95px;
+			  margin-bottom: 4px;
+		}
+
+
+	  }
+
+	  .menu-sub li {
+		display: block;
+	  }
+
+	  
 }
 
-.menu-icon{
-	// width: 32px !important;
-}
+
 
 
 

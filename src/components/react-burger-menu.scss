@@ -1,0 +1,102 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    position: relative;
+	width: 36px;
+	height: 30px;
+	left: .5rem;
+    top: 1rem;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+	background: #ffffff;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+	background: #a90000;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+	height: 36px !important;
+    width: 36px !important;
+    margin-top: 1rem;
+    margin-right: .4rem;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+	background: none;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+	position: fixed;
+    height: 100%;
+    padding: 0;
+    transition: all 0.3s ease 0s !important;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: -webkit-linear-gradient(left, $darkest-green, $darkest-green 29%, $darker-green 29%, $darker-green);
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+
+    // border-right: 3rem solid $medium-green;
+    }
+
+    bm-menu:focus{
+        outline: none;
+    } 
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+	fill: #ffffff;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+	color: $white;
+    padding: 0.8em;
+    a{
+        color: $white;
+        font-family: 'Regalis-Regular';
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        letter-spacing: 1.8px;
+    }
+    a:hover{
+        color: $gold;
+    }
+
+}
+
+  
+  /* Individual item */
+  .bm-item {
+	// display: inline-block;
+	display: flex !important;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+  }
+
+  .bm-menu{
+      padding-left: 64px;
+      padding-top: 64px;
+  }
+
+
+  .bm-menu, .bm-item-list, .bm-item{
+        outline: none;
+	    outline-color: $medium-green !important;
+    }
