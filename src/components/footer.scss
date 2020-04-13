@@ -1,0 +1,73 @@
+.normalize-multiline-footer{
+    margin: 0;
+    margin-bottom: 0px !important;
+}
+
+footer{
+    
+    background-color: $brown;
+    z-index: 1;
+    padding-bottom: 48px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    .column-border{
+        border-top: 1px solid $white;
+        margin-right: 32px;
+    }
+
+    .column-border-lower{
+        @extend .column-border;
+        margin-top: 48px;
+        
+    }
+
+    .brand-footer{
+        color: $white;
+        margin-top: 48px;
+        margin-bottom: 48px;
+        height: 56px;
+    }
+
+    h3{
+        font-family: 'Regalis-Medium';
+        font-size: 1.313rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: normal;
+        text-align: left;
+        color: $white;
+    }
+
+    h4{
+        font-family: 'Barlow';
+        font-size: 0.625rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 1.5px;
+        text-align: left;
+        color: $white;
+        margin-bottom: 24px;
+        padding-top: 13px;
+    }
+    ul li a{
+        font-family: 'Barlow';
+        font-size: 0.938rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.87;
+        letter-spacing: normal;
+        text-align: left;
+        color: $white;
+    }
+
+    a:hover{
+        color: $white;
+        border-bottom: 1px solid $white;
+    }
+}

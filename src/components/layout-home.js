@@ -4,7 +4,9 @@ import Helmet from './helmet';
 import HeroSlider from './hero-slider';
 import SideMenu from './side-menu';
 import Navbar from './navbar';
-import ListingLove from './listing-love';
+import Footer from './footer';
+import ReadTheStories from './read-the-stories';
+import Subscription from './subscription';
 import { graphql, StaticQuery } from 'gatsby';
 import ArrowRBlack from '../images/arrow-right-black.svg';
 import { Link } from 'gatsby';
@@ -27,11 +29,11 @@ const LayoutHome = ({ children }) => (
 			<section className="section project-list-title">
 				<div className="level featured-heading">
 					<div className="level-left">
-						<h2 className="is-size-2 level-item">Love Stories & Couples</h2>
+						<h2 className="is-size-2 level-item group-list-title">Read the Stories</h2>
 					</div>
 					<div className="level-right">
 						<Link to="/all-love-stories" class="button is-normal level-item">
-							ALL LOVE STORIES
+							ALL PHOTOGRAPHY
 								<img className="image see-all" src={ArrowRBlack} alt="Arrow Right" />	
 						</Link>
 					</div>
@@ -42,7 +44,7 @@ const LayoutHome = ({ children }) => (
 					<section className="section project-thumbnail">
 						<div className="columns is-multiline">
 								{data.allMarkdownRemark.edges.map(({node}) => (
-									<ListingLove 
+									<ReadTheStories 
 										title={node.frontmatter.title} 
 										author={node.frontmatter.author}
 										date={node.frontmatter.date}
@@ -55,6 +57,9 @@ const LayoutHome = ({ children }) => (
 					</section>
 					)
 				}}/>
+
+				<Subscription />
+				<Footer />
 
 		</div>
 	</div>

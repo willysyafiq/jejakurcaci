@@ -1,0 +1,79 @@
+.subscription{
+
+    padding: 69px 96px;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-top: 124px;
+    margin-bottom: 154px;
+
+    border: 1px solid $black;
+
+    h2{
+        font-family: 'Regalis-Medium';
+        font-size: 2.5rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: left;
+        color: $black;
+    }
+
+    p{
+        font-family: 'Cormorant Garamond';
+        font-size: 1.5rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: left;
+        color: $black;
+        margin-bottom: 30px;
+    }
+
+    button{
+        font-family: 'Barlow';
+        font-size: 1.125rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: 0.9px;
+        text-align: left;
+        color: $white;
+        background-color: $black;
+        height: 42px;
+        width: 180px;
+        border-radius: 0;
+        border: 0px;
+    }
+
+    button:hover {
+        color: $white;
+    }
+
+    input{
+        width: 486px;
+        height: 42px;
+        border: solid 1px $black;   
+        border-radius: 0;
+        font-family: 'Barlow';
+        color: $black;
+    }
+
+    input:hover{
+        border: 1px solid $black;
+    }
+
+    input:focus, input:active{
+        outline: none;
+        outline-color: $black;
+        border-color: $black;
+        box-shadow: none;
+    }
+
+
+
+}

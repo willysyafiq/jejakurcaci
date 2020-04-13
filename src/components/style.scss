@@ -4,12 +4,17 @@
 // Importing React Burger Menu
 @import './react-burger-menu.scss';
 
+
+
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
 
-
+// Importing Custom Style per-Component
+@import './subscription.scss';
+@import './footer.scss';
+@import './listing.scss';
 
 @font-face {
 	font-family: "Regalis-Regular";
@@ -31,7 +36,7 @@
 
 
 .hero-title{
-	font-family: "Regalis-Regular";
+	font-family: "Regalis-Medium";
 	font-size: 55px !important;
 	line-height: 60px !important;
 	font-weight: 400 !important;
@@ -90,79 +95,6 @@
 }
 
 
-.project-list-title{
-	padding-left: 4.5rem;
-	padding-right: 4.5rem;
-	padding-bottom: 0;
-	.featured-heading{
-		border-bottom: 1px solid $black;
-		h2{
-			font-family: 'Regalis-Regular';
-			font-size: 48px;
-			line-height: 60px;
-		}
-		padding-bottom: 12px;
-		margin-bottom: 0px;
-		button,a{
-			font-family: 'Barlow';
-			font-size: 20;
-			line-height: 24px;
-			color: $black;
-			border: 1px solid $black;
-			border-radius: 0;
-			.icon{
-				color: $black;
-			}
-		}
-	}
-}
-.project-thumbnail{
-	padding-left: 4.5rem;
-	padding-right: 4.5rem;
-	// padding-top: 0rem;
-	padding-bottom: 0rem;
-
-	.column{
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-	.card{
-		box-shadow: none;
-		padding-left: 0;
-		margin-bottom: 1.75rem;
-	}
-
-	.card-content{
-		padding-top: 1.5rem;
-	}
-
-	.proj-cat{
-		font-family: 'Barlow';
-		color: $grey;
-		font-size: 12px;
-		line-height: 1.5;
-		font-weight: 600;
-		margin-bottom: 12px;
-		letter-spacing: 1pt;
-		text-transform: uppercase;
-	}
-	.proj-title{
-		font-family: 'Regalis-Regular';
-		color: $black;
-		font-size: 28px;
-		line-height: 32px;
-		font-weight: 500;
-	}
-
-	.featured-proj-title{
-		@extend .proj-title;
-		font-size: 40px;
-		line-height: 44px;
-	}
-
-	
-
-}
 
 .navbar, .navbar-brand, .navbar-mid, .navbar-end{
 	height: 64px;

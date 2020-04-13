@@ -8,10 +8,10 @@ import featured5 from '../images/image-5.png';
 import ArrowRBlack from '../images/arrow-right-black.svg';
 import { Link } from 'gatsby';
 
-const ListingLove = ({ title, author, category, path, date, body }) => { 
+const ReadTheStories = ({ title, author, category, path, date, body }) => { 
     return( 
         
-        <div className="column is-3">
+        <div className="column is-4">
             <div className="card-image">
                 <div className="image">
                     <Link to="/post">
@@ -118,5 +118,5 @@ const ListingLove = ({ title, author, category, path, date, body }) => {
 
 // );
 
-export default ListingLove;
+export default ReadTheStories;
 
