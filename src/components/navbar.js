@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 import { Link } from 'gatsby';
 
-import BrandLogo from '../images/logo-center.png';
+import BrandLogo from '../images/logo-black-center.svg';
 import SearchBlack from '../images/search-black.svg';
 import PinterestBlack from '../images/pinterest-black.svg';
 import FacebookBlack from '../images/facebook-black.svg';

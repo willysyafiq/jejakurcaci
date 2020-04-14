@@ -25,6 +25,16 @@
 
 	font-family: "Regalis-Medium";
 	src: url("../fonts/regalis-medium.otf");
+
+	font-family: "AlethiaPro-Regular";
+	src: url("../fonts/alethia-pro-regular.woff");
+
+	font-family: "AlethiaPro-Italic";
+	src: url("../fonts/alethia-pro-italic.woff");
+}
+
+body{
+	color: $black;
 }
 
 #hero-bottom{
@@ -36,7 +46,7 @@
 
 
 .hero-title{
-	font-family: "Regalis-Medium";
+	font-family: "AlethiaPro-Regular";
 	font-size: 55px !important;
 	line-height: 60px !important;
 	font-weight: 400 !important;
@@ -179,7 +189,7 @@
 	nav li{
 		display: block;
 		a{
-			font-family: 'Regalis-Medium';;
+			font-family: 'AlethiaPro-Regular';;
 			font-size: 1.875rem;
 			line-height: 1.53;
 			letter-spacing: 1.5px;
@@ -263,7 +273,7 @@
 		  }
 
 		.title{
-			font-family: 'Regalis-SemiCond';
+			font-family: 'AlethiaPro-Regular';
 			color: $white;
 			font-size: 1.563rem;
 			line-height: 1.2;
@@ -302,22 +312,24 @@
 	padding-left: 10%;
 	padding-right: 10%;
 	h1{
-		font-family: 'Regalis-Regular';
+		font-family: 'AlethiaPro-Regular';
 		font-size: 55px;
 		line-height: 60px;
 		text-align: center;
 		margin-bottom: 0;
 	}
+
 	p{
 		font-family: 'Barlow';
-		color: $grey;
-		font-size: 12px;
-		line-height: 1.5;
+		color: $green;
+		font-size: 1.25rem;
 		font-weight: 600;
 		margin-bottom: 12px;
-		letter-spacing: 1pt;
 		text-transform: uppercase;
 		text-align: center;
+		line-height: 1.2;
+		letter-spacing: 2.8px;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -327,19 +339,43 @@
 	padding-bottom: 1rem;
 }
 
+.border-author{
+	border-top: 1px solid $dark-grey;
+	border-bottom: 1px solid $dark-grey;
+	margin-top: 32px;
+}
+
+.border-gallery-thumb{
+	border-top: 1px solid $dark-grey;
+	border-bottom: 1px solid $dark-grey;
+	padding-top: 32px;
+	margin-bottom: 64px !important;
+}
+
+.border-tag{
+	border-top: 1px solid $dark-grey;
+	border-bottom: 1px solid $dark-grey;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin-bottom: 150px !important;
+}
+
+
 .proj-date{
 	font-family: 'Barlow';
-	color: $dark-grey;
+	color: $darkest-grey;
 	font-size: 1rem;
 	line-height: 1.5;
 	font-weight: 600;
 	letter-spacing: 1pt;
+	color: $darkest-grey;
 }
 
 .proj-hour{
 	@extend .proj-date;
 	font-size: 1rem;
 	font-weight: 500;
+	margin-bottom: 0;
 }
 
 .author{
@@ -348,12 +384,127 @@
 	font-weight: 500;
 }
 
+.quotes{
+	font-family: 'AlethiaPro-Regular';
+	font-size: 1.5rem;
+	line-height: 1.25;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.second-post-title{
+	font-family: 'AlethiaPro-Regular';
+	font-size: 2rem;
+	line-height: 1.5;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+
+.gallery-title{
+	font-family: 'BarlAlethiaPro-Regularow';
+	color: $darkest-grey;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	letter-spacing: 2.4px;
+	color: $darkest-grey;
+	text-align: left;
+}
+
+.images-count{
+	font-family: 'Barlow';
+	color: $darkest-grey;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: normal;
+ 	letter-spacing: 2px;
+	color: $darkest-grey;
+	text-align: right;
+}
+
+.thumbnail-gallery{
+	width: 100%;
+	margin-bottom: 64px !important;
+}
+
+.see-all-thumb{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: 100%;
+	border: 1px solid $black;
+	height: 100%;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+	a{
+		text-align: left;
+		font-family: 'AlethiaPro-Regular';
+		font-size: 1.5rem;
+		line-height: 1.2;
+		color: $black;
+	}
+	.image{
+		height: 20px;
+		margin-top: 40px;
+	}
+}
+
+.see-all-thumb:hover{
+	a{
+		color: $green;
+	}
+}
+
 .body-post{
 	padding-top: 2rem;
-	padding-bottom: 4rem;
+	padding-bottom: 3rem;
 	p {
-		font-family: 'Regalis-SemiCond';
+		font-family: 'AlethiaPro-Regular';
 		font-size: 1.5rem;
 		line-height: 1.5;
 	}
+
+	h2{
+		font-family: 'AlethiaPro-Regular';
+		font-size: 1.5rem;
+		line-height: 1.2;
+		  letter-spacing: 1.3px;
+		  margin-bottom: 1rem;
+	}
+}
+
+.tags .tag:not(:last-child){
+	margin-right: 1rem;
+}
+
+.tag, .tag:not(body){
+	height: 40px;
+	border: solid 1px $dark-grey;
+	background-color: $white;
+	font-family: Barlow;
+	font-size: 1rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: $black;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	text-transform: uppercase;
+	border-radius: 0;
+}
+
+
+
+// Custom Helper Class
+
+.no-bot-padding{
+	padding-bottom: 0 !important;
+}
+
+.no-bot-margin{
+	margin-bottom: 0 !important;
 }

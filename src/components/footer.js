@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.scss';
 import { Link } from 'gatsby';
-import BrandLogo from '../images/logo-center.png';
+import LogoFooter from '../images/logo-white-left.svg';
 
 const Footer = () => (
   <footer className="columns is-multiline normalize-multiline-footer">
     <div className="column is-12">
-      <img className="image brand-footer" src={BrandLogo} alt="Brand Logo" />	
+      <img className="image brand-footer" src={LogoFooter} alt="Brand Logo" />	
     </div>
     <div className="column is-3 column-border">
       <h4>LOREM IPSUM</h4>
