@@ -457,6 +457,11 @@ body{
 	}
 }
 
+.see-all-journal{
+	@extend .see-all-thumb;
+	height: 60%;
+}
+
 .body-post{
 	padding-top: 2rem;
 	padding-bottom: 3rem;
@@ -508,3 +513,8 @@ body{
 .no-bot-margin{
 	margin-bottom: 0 !important;
 }
+
+.margin-bot-72{
+	margin-bottom: 72px;
+}
+

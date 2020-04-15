@@ -19,8 +19,8 @@ const ReadTheStories = ({ title, author, category, path, date, body }) => {
                     </Link>
                 </div>
             </div>
-            <div className="card card-content">
-                <p className="proj-cat">{category}</p>
+            <div className="card card-content-stories">
+                <p className="proj-cat-stories">{category}</p>
                 <p className="proj-title">
                     {title}
                 </p>
