@@ -15,6 +15,7 @@
 @import './subscription.scss';
 @import './footer.scss';
 @import './listing.scss';
+@import './project-carousel.scss';
 
 @font-face {
 	font-family: "Regalis-Regular";
@@ -511,6 +512,10 @@ body{
 }
 
 .no-bot-margin{
+	margin-bottom: 0 !important;
+}
+
+.no-top-margin{
 	margin-bottom: 0 !important;
 }
 

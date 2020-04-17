@@ -77,7 +77,7 @@ const LayoutGeneral = ({ children }) => (
                                             <div className="columns">
                                                 <div className="column is-8">
                                                     <div>
-                                                        <Link to="/">See All Images</Link> 
+                                                        <Link to="/carousel" data-target="modal">See All Images</Link> 
                                                     </div>
                                                 </div>
                                                 <div className="column is-4">
@@ -89,6 +89,16 @@ const LayoutGeneral = ({ children }) => (
                                 </div>
                             </div>
                         </div>
+
+                        {/* Carousel Area */}
+                        <div className="modal">
+                            <div className="modal-background"></div>
+                            <div className="modal-content">
+                                test
+                            </div>
+                            <button className="modal-close is-large" aria-label="close"></button>
+                        </div>
+
                         <div className="columns">
                             <div className="column is-8 body-post">
                                 <h2>SUBTITLE OR SUBCOPY OF THE ARTICLE</h2>

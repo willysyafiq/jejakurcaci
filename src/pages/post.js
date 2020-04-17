@@ -3,8 +3,7 @@ import LayoutGeneral from '../components/layout-general';
 
 
 const IndexPage = () => (
-<LayoutGeneral>
-</LayoutGeneral>
+    <LayoutGeneral></LayoutGeneral>
 )
 
 
