@@ -291,7 +291,7 @@
             font-size: 1.25rem;    
         }
         padding-bottom: 18px;
-        border-bottom: 0px solid $dark-grey;
+        border-bottom: 1px solid $dark-grey;
         margin-bottom: 14px;
     }
 
@@ -317,6 +317,45 @@
             padding-right: 1rem;
             height: 1.25rem;
         }
+    }
+
+    .close-btn{
+      position: fixed;
+      right: 2.25em;
+      top: 2.25em;
+      width: 32px;
+    }
+
+    .relative-wrapper{
+      position: relative;
+      margin-right: 1.5em;
+    }
+
+    .prev-slide{
+      width: 64px;
+      position: absolute;
+      left: -3.5em;
+      top: 40%;
+      border: none;
+      background-color: transparent;
+    }
+
+    .next-slide{
+      width: 64px;
+      position: absolute;
+      right: -3.5em;
+      top: 40%;
+      border: none;
+      background-color: transparent;
+    }
+
+
+    .prev-slide:focus,.next-slide:focus{
+      outline: none;
+    }
+
+    .prev-slide:hover,.next-slide:hover{
+      cursor: pointer;
     }
 
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import './style.scss';
+import LayoutCarousel from './layout-carousel';
+import SlideShow from "../components/slideshow"
 
 import SearchBlack from '../images/search-black.svg';
 import PinterestBlack from '../images/pinterest-black.svg';
@@ -12,94 +14,83 @@ import Image4 from '../images/jejakurcaci_masami_daiki_couplesession-4.jpg';
 import Image5 from '../images/jejakurcaci_masami_daiki_couplesession-5.jpg';
 
 const ProjectCarousel = () => (
-    <section className="project-carousel">
-        <div className="columns no-bot-margin no-top-margin">
-            <div className="column is-7">
-                <div className="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <img className="featured-image" src={Image1} alt="Image" />	
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide4"
-                        class="carousel__prev">Go to last slide</a>
-                        <a href="#carousel__slide2"
-                        class="carousel__next">Go to next slide</a>
-                    </div>
-                    </li>
-                    <li id="carousel__slide2"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <img className="featured-image" src={Image2} alt="Image" />	
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1"
-                        class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3"
-                        class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide3"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <img className="featured-image" src={Image3} alt="Image" />
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2"
-                        class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4"
-                        class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide4"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <img className="featured-image" src={Image4} alt="Image" />
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide3"
-                        class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1"
-                        class="carousel__next">Go to first slide</a>
-                    </li>
-                </ol>
-                    {/* <aside className="carousel__navigation">
-                        <ol className="carousel__navigation-list">
-                        <li className="carousel__navigation-item">
-                            <a href="#carousel__slide1"
-                            className="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li className="carousel__navigation-item">
-                            <a href="#carousel__slide2"
-                            className="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li className="carousel__navigation-item">
-                            <a href="#carousel__slide3"
-                            className="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li className="carousel__navigation-item">
+    <LayoutCarousel>
+        {/* <section className="project-carousel">
+            <div className="columns no-bot-margin no-top-margin">
+                <div className="column is-7">
+                    <div className="carousel" aria-label="Gallery">
+                    <ol class="carousel__viewport">
+                        <li id="carousel__slide1"
+                            tabindex="0"
+                            class="carousel__slide">
+                            <img className="featured-image" src={Image1} alt="Image" />	
+                        <div class="carousel__snapper">
                             <a href="#carousel__slide4"
-                            className="carousel__navigation-button">Go to slide 4</a>
+                            class="carousel__prev">Go to last slide</a>
+                            <a href="#carousel__slide2"
+                            class="carousel__next">Go to next slide</a>
+                        </div>
                         </li>
-                        </ol>
-                    </aside> */}
+                        <li id="carousel__slide2"
+                            tabindex="0"
+                            class="carousel__slide">
+                            <img className="featured-image" src={Image2} alt="Image" />	
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide1"
+                            class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3"
+                            class="carousel__next">Go to next slide</a>
+                        </li>
+                        <li id="carousel__slide3"
+                            tabindex="0"
+                            class="carousel__slide">
+                            <img className="featured-image" src={Image3} alt="Image" />
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide2"
+                            class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide4"
+                            class="carousel__next">Go to next slide</a>
+                        </li>
+                        <li id="carousel__slide4"
+                            tabindex="0"
+                            class="carousel__slide">
+                            <img className="featured-image" src={Image4} alt="Image" />
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide3"
+                            class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1"
+                            class="carousel__next">Go to first slide</a>
+                        </li>
+                    </ol>
+                       
+                    </div>
+                </div>
+                <div className="column is-5">
+                    <p className="pages">5<span>/25</span></p>
+                    <h1 className="title">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</h1>
+                    <p className="caption">Cat ipsum dolor sit amet, mark territory. Pounce on unsuspecting person murr i hate humans they are so annoying so while happily ignoring when being called for making bread on the bathrobe for show belly. Milk the cow scratch the furniture, and get scared by doggo also cucumerro . Scratch the furniture russian blue fight own tail cereal boxes make for five star accommodation and lick human with sandpaper tongue.</p>
+                    <div className="share">
+                        <p>SHARE</p>
+                        <a href="#">
+                            <img className="image social-logo" src={FacebookBlack} alt="Facebook Icon" />
+                        </a>
+                        <a href="#">
+                            <img className="image social-logo" src={PinterestBlack} alt="Pinterest Icon" />
+                        </a>
+                        <a href="#">
+                            <img className="image social-logo" src={InstagramBlack} alt="Instagram Icon" />
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div className="column is-5">
-                <p className="pages">5<span>/25</span></p>
-                <h1 className="title">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</h1>
-                <p className="caption">Cat ipsum dolor sit amet, mark territory. Pounce on unsuspecting person murr i hate humans they are so annoying so while happily ignoring when being called for making bread on the bathrobe for show belly. Milk the cow scratch the furniture, and get scared by doggo also cucumerro . Scratch the furniture russian blue fight own tail cereal boxes make for five star accommodation and lick human with sandpaper tongue.</p>
-                <div className="share">
-                    <p>SHARE</p>
-                    <a href="#">
-                        <img className="image social-logo" src={FacebookBlack} alt="Facebook Icon" />
-                    </a>
-                    <a href="#">
-                        <img className="image social-logo" src={PinterestBlack} alt="Pinterest Icon" />
-                    </a>
-                    <a href="#">
-                        <img className="image social-logo" src={InstagramBlack} alt="Instagram Icon" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section> */}
+
+
+
+
+        <SlideShow></SlideShow>
+        
+    </LayoutCarousel>
 )
 
 export default ProjectCarousel;
