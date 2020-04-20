@@ -29,25 +29,27 @@ const LayoutCarousel = ({ children }) => (
                     <img src={CloseBlack} className="close-btn" />
                 </Link>
                 <div className="column is-7">
-                    <div className="relative-wrapper">
+                    <div className="left-side">
                         {children}
                     </div>
                 </div>
                 <div className="column is-5">
-                    <p className="pages">5<span>/25</span></p>
-                    <h1 className="title">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</h1>
-                    <p className="caption">Cat ipsum dolor sit amet, mark territory. Pounce on unsuspecting person murr i hate humans they are so annoying so while happily ignoring when being called for making bread on the bathrobe for show belly. Milk the cow scratch the furniture, and get scared by doggo also cucumerro . Scratch the furniture russian blue fight own tail cereal boxes make for five star accommodation and lick human with sandpaper tongue.</p>
-                    <div className="share">
-                        <p>SHARE</p>
-                        <a href="#">
-                            <img className="image social-logo" src={FacebookBlack} alt="Facebook Icon" />
-                        </a>
-                        <a href="#">
-                            <img className="image social-logo" src={PinterestBlack} alt="Pinterest Icon" />
-                        </a>
-                        <a href="#">
-                            <img className="image social-logo" src={InstagramBlack} alt="Instagram Icon" />
-                        </a>
+                    <div className="right-side">
+                        <p className="pages">5<span>/25</span></p>
+                        <h1 className="title">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</h1>
+                        <p className="caption">Cat ipsum dolor sit amet, mark territory. Pounce on unsuspecting person murr i hate humans they are so annoying so while happily ignoring when being called for making bread on the bathrobe for show belly. Milk the cow scratch the furniture, and get scared by doggo also cucumerro . Scratch the furniture russian blue fight own tail cereal boxes make for five star accommodation and lick human with sandpaper tongue.</p>
+                        <div className="share">
+                            <p>SHARE</p>
+                            <a href="#">
+                                <img className="image social-logo" src={FacebookBlack} alt="Facebook Icon" />
+                            </a>
+                            <a href="#">
+                                <img className="image social-logo" src={PinterestBlack} alt="Pinterest Icon" />
+                            </a>
+                            <a href="#">
+                                <img className="image social-logo" src={InstagramBlack} alt="Instagram Icon" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

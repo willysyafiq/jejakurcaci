@@ -12,7 +12,7 @@ const SideMenu = () => (
         {/* <a className="hamburger-sidebar"> 
             <img className="image menu-icon" src={hamburger} alt="hamburger" />
         </a> */}
-        <Menu width={'100%'} customBurgerIcon={ <img src={hamburger} /> } customCrossIcon={ <img src={close} /> }>
+        <Menu width={'100%'} customBurgerIcon={ <img src={hamburger} alt="hamburger" /> } customCrossIcon={ <img src={close} alt="close" /> }>
             <div className="columns">
                 <div className="column is-8 first-half">
                     <ul>

@@ -21,7 +21,7 @@ function SlideShow() {
     graphql`
       query {
         allFile(
-          sort: { fields: name, order: DESC }
+          sort: { fields: name, order: ASC }
           filter: { relativeDirectory: { eq: "slides" } }
         ) {
           edges {
@@ -29,7 +29,7 @@ function SlideShow() {
               id
               name
               childImageSharp {
-                fluid(maxWidth: 1200) {
+                fluid(maxWidth: 1920) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -58,8 +58,8 @@ function SlideShow() {
         />
       </div>
       <div>
-        <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack}/></button>
-        <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack}/></button>
+        <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack} alt="prev"/></button>
+        <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack} alt="next"/></button>
       </div>
     </div>
   )
