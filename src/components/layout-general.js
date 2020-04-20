@@ -17,16 +17,17 @@ const LayoutGeneral = ({ children }) => (
             <SideMenu/>
         </div>	
         <div className="column is-rest">	
-            <section className="hero">
                 <Helmet />
-                <Navbar></Navbar>
-                <section className="columns">
+                <nav className="is-hidden-mobile navbar-general">
+                    <Navbar/>
+                </nav>
+                <div className="columns">
                     <div className="column is-12 post-title">
                         <p>Love Stories → Couples & Lovebirds</p>
                         <h1>Masami & Daiki<br/>Gaienmae, Japan, 2019</h1>
                     </div>  
-                </section>
-                <section className="columns is-centered no-bot-margin">
+                </div>
+                <div className="columns is-centered no-bot-margin">
                     <div className="column is-10">
                         <img className="featured-image" src={Image1} alt="Featured Image" />	
                         <div className="columns border-author">
@@ -181,8 +182,7 @@ Turned out, they were more than happy to! It was as if they were back into the c
                         </div>
 
                     </div>
-                </section>
-            </section>
+                </div>
 
             <Subscription />
             <Footer />

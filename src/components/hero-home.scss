@@ -1,0 +1,29 @@
+
+#hero-bottom{
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 4rem;
+	padding-left: 3rem;
+}
+
+
+.hero-title{
+	font-family: "AlethiaPro-Regular";
+	font-size: 55px !important;
+	line-height: 60px !important;
+	font-weight: 400 !important;
+	padding-top: 8rem;
+}
+
+.hero-image {
+	display: flex;
+	background: url("../images/hero-1.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.arrow-hero{
+	width: 56px;
+	padding-top: 1.75rem;
+}

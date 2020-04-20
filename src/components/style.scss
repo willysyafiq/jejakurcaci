@@ -16,6 +16,8 @@
 @import './footer.scss';
 @import './listing.scss';
 @import './project-carousel.scss';
+@import './navbar.scss';
+@import './hero-home.scss';
 
 @font-face {
 	font-family: "Regalis-Regular";
@@ -36,35 +38,6 @@
 
 body{
 	color: $black;
-}
-
-#hero-bottom{
-	display: flex;
-	align-items: flex-end;
-	margin-bottom: 4rem;
-	padding-left: 3rem;
-}
-
-
-.hero-title{
-	font-family: "AlethiaPro-Regular";
-	font-size: 55px !important;
-	line-height: 60px !important;
-	font-weight: 400 !important;
-	padding-top: 8rem;
-}
-
-.hero-image {
-	display: flex;
-	background: url("../images/hero-1.png");
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.arrow-hero{
-	width: 56px;
-	padding-top: 1.75rem;
 }
 
 .see-all{
@@ -106,41 +79,6 @@ body{
 }
 
 
-
-.navbar, .navbar-brand, .navbar-mid, .navbar-end{
-	height: 64px;
-	padding: 12px;
-	background: transparent;
-	// border-bottom: 1px solid $black;
-	margin-bottom: 0px;
-}
-
-.border-bottom{
-	border-bottom: 1px solid $black;
-}
-
-.secondrow{
-	.navbar-item, .navbar-end{
-		padding-top: 24px;
-		padding-bottom: 0;
-		height: 32px;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-	}
-	.navbar, .navbar-brand, .navbar-mid, .navbar-end{
-		border: none;
-	}
-}
-
-.brand-logo{
-	height: 36px;
-}
-
-.social-logo{
-	height: 24px;
-}
 
 
 // Side Menu Section
@@ -309,7 +247,7 @@ body{
 
 // Single Post styling
 .post-title{
-	padding-top: 4rem;
+	padding-top: 5.25em;
 	padding-left: 10%;
 	padding-right: 10%;
 	h1{
@@ -521,5 +459,9 @@ body{
 
 .margin-bot-72{
 	margin-bottom: 72px;
+}
+
+.no-padding{
+	padding: 0 !important;
 }
 

@@ -22,10 +22,10 @@ const LayoutHome = ({ children }) => (
 		<div className="column is-rest">	
 
 			<Helmet />
-			<section className="hero hero-image is-fullheight">
-				<Navbar />
-				<HeroSlider/>
-			</section>
+			<nav className="is-hidden-mobile navbar-home">
+				<Navbar/>
+			</nav>
+			<HeroSlider/>
 
 			<section className="section project-list-title">
 				<div className="level featured-heading">

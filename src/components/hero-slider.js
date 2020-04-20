@@ -1,34 +1,57 @@
-import React from 'react';
-import './style.scss';
-import ArrowLBlack from '../images/arrow-left-black.svg';
-import ArrowRBlack from '../images/arrow-right-black.svg';
+import React, { useState } from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import ArrowLeftBlack from "../images/arrow-left-black.svg"
+import ArrowRightBlack from "../images/arrow-right-black.svg"
 
-const HeroSlider = () => ( 
-   <div className="hero hero-body">
-        <div className="container" id="hero-bottom">
-            <div className="columns level">
-                <div className="column level-left">
-                        <div className="columns is-vcentered is-variable is-7-desktop">
-                            <div className="column is-narrow">
-                                <img className="image arrow-hero" src={ArrowLBlack} alt="Arrow Left" />
-                            </div>
-                            <div className="column">
-                                <h1 className="hero-title has-text-black">
-                                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
-                                </h1>
-                            </div>
-                    </div>
-                </div>
-                <div className="column level-right">
-                    <div className="columns right is-vcentered">
-                        <div className="column is-one-quarter">
-                            <img className="image arrow-hero" src={ArrowRBlack} alt="Arrow Right" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+function HeroSlider() {
+  const [index, setIndex] = useState(0)
+  const { allFile } = useStaticQuery(
+    graphql`
+      query {
+        allFile(
+          sort: { fields: name, order: ASC }
+          filter: { relativeDirectory: { eq: "hero-images" } }
+        ) {
+          edges {
+            node {
+              id
+              name
+              childImageSharp {
+                fluid(maxWidth: 1920) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  //Minus 1 for array offset from 0
+  const length = allFile.edges.length - 1
+  const handleNext = () =>
+    index === length ? setIndex(0) : setIndex(index + 1)
+  const handlePrevious = () =>
+    index === 0 ? setIndex(length) : setIndex(index - 1)
+  const { node } = allFile.edges[index]
+  console.log(index)
+  console.log(length)
+  return (
+    <div className="">
+        <Img
+          fluid={node.childImageSharp.fluid}
+          key={node.id}
+          alt={node.name.replace(/-/g, " ").substring(2)}
+        className="hero-image"/>
+      <div>
+        <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack} alt="prev"/></button>
+        <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack} alt="next"/></button>
+      </div>
     </div>
-)
+  )
+}
+
 
 export default HeroSlider;
