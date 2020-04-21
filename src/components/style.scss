@@ -40,6 +40,17 @@ body{
 	color: $black;
 }
 
+
+::-moz-selection { /* Code for Firefox */
+	color: $white;
+	background: $green;
+}
+
+::selection {
+	color: $white;
+	background: $green;
+}
+
 .see-all{
 	height: 20px;
 	margin-left: 8px;

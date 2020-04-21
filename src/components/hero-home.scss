@@ -1,29 +1,69 @@
 
-#hero-bottom{
-	display: flex;
-	align-items: flex-end;
-	margin-bottom: 4rem;
-	padding-left: 3rem;
-}
+.hero-home{
 
+	.hero-title{
+		font-family: "AlethiaPro-Regular";
+		font-size: 55px !important;
+		line-height: 60px !important;
+		font-weight: 400 !important;
+		padding-top: 8rem;
+	}
+	
+	.hero-image {
+		height: 100vh;
+	}
+	
+	.arrow-hero{
+		width: 56px;
+		padding-top: 1.75rem;
+	}
 
-.hero-title{
-	font-family: "AlethiaPro-Regular";
-	font-size: 55px !important;
-	line-height: 60px !important;
-	font-weight: 400 !important;
-	padding-top: 8rem;
-}
+	.hero-navigation{
+		position: absolute;
+		bottom: 7.5em;
+		left: 9.75em;
+		width: 60%;
+	}
 
-.hero-image {
-	display: flex;
-	background: url("../images/hero-1.png");
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
-}
+	.prev-slide{
+		width: 64px;
+		position: absolute;
+		left: -3em;
+		top: 40%;
+		border: none;
+		background-color: transparent;
+	  }
+  
+	  .next-slide{
+		width: 64px;
+		position: absolute;
+		right: -3.5em;
+		top: 40%;
+		border: none;
+		background-color: transparent;
+	  }
+  
+	  .prev-slide:focus,.next-slide:focus{
+		outline: none;
+	  }
+  
+	  .prev-slide:hover,.next-slide:hover{
+		cursor: pointer;
+	  }
 
-.arrow-hero{
-	width: 56px;
-	padding-top: 1.75rem;
+	  .dot {
+		height: 12px;
+		width: 12px;
+		margin-right: 12px;
+		background-color: transparent;
+		border-radius: 50%;
+		display: inline-block;
+		border: 1px solid $black;
+		margin-top: 32px;
+	  }
+
+	  .dot-active{
+		  @extend .dot;
+		  background-color: $black;
+	  }
 }

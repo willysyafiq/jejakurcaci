@@ -1,6 +1,6 @@
 .project-carousel{
 
-    padding-left: 2em;
+    padding-left: 3em;
     padding-top: 1em;
 
     // Left Side Starts Here
@@ -28,6 +28,9 @@
         letter-spacing: normal;
         text-align: left;
         color: $black;
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-top: 1rem;
     }
 
     .title{
@@ -40,6 +43,8 @@
         letter-spacing: normal;
         text-align: left;
         color: var(--black);
+        padding-left: .5em;
+        padding-right: .5em;
     }
 
     .pages{
@@ -61,10 +66,13 @@
         padding-bottom: 18px;
         border-bottom: 1px solid $dark-grey;
         margin-bottom: 14px;
+        padding-left: .5em;
+        padding-right: .5em;
     }
 
     .share{
-        padding-top: 64px;
+        padding-top: 56px;
+        padding-left: .5rem;
         p{
             display: inline-block;
             font-family: 'Barlow';
@@ -91,7 +99,7 @@
       position: absolute;
       right: 2.25em;
       top: 2.25em;
-      width: 32px;
+      width: 36px;
     }
 
     .prev-slide{

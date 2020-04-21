@@ -39,17 +39,30 @@ function HeroSlider() {
   console.log(index)
   console.log(length)
   return (
-    <div className="">
+    <div className="hero-home">
         <Img
           fluid={node.childImageSharp.fluid}
           key={node.id}
           alt={node.name.replace(/-/g, " ").substring(2)}
         className="hero-image"/>
-      <div>
-        <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack} alt="prev"/></button>
-        <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack} alt="next"/></button>
+      <div className="hero-navigation">
+        <div className="columns is-multiline">
+            <div className="column is-10 is-offset-1">
+              <h2 className="hero-title">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</h2>
+                <span class="dot-active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div className="column is-2">
+              <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack} alt="prev"/></button>
+            </div>
+            <div className="column is-2">
+              <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack} alt="next"/></button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   )
 }
 
