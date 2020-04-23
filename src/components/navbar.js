@@ -30,17 +30,17 @@ const Navbar = () => (
 					<div className="column is-12 second-row">
 						<div className="navbar-end">
 							<span className="navbar-item">
-								<a href="#">
+								<a href="https://www.instagram.com/jejakkurcaci/" target="_blank">
 									<img className="image social-logo" src={InstagramBlack} alt="Instagram Icon" />	
 								</a>
 							</span>
 							<span className="navbar-item">
-								<a href="#">
+								<a href="https://www.facebook.com/Jejakurcaci-289920665021670/" target="_blank">
 									<img className="image social-logo" src={FacebookBlack} alt="Facebook Icon" />
 								</a>
 							</span>
 							<span className="navbar-item">
-								<a href="#">
+								<a href="https://id.pinterest.com/effendidani/jejakurcaci/" target="_blank">
 									<img className="image social-logo" src={PinterestBlack} alt="Pinterest Icon" />
 								</a>
 							</span>
