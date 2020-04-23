@@ -180,3 +180,39 @@
 	
 	}
 }
+
+
+
+// Listing Journal
+
+.journal-list{
+	padding: 2em;
+	.image-container{
+
+	}
+
+	.card-content{
+		padding-top: 1em;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.proj-cat{
+		font-family: 'Barlow';
+		color: $green;
+		font-size: 12px;
+		line-height: 1.2;
+		font-weight: 600;
+		margin-bottom: 12px;
+		letter-spacing: 2pt;
+		text-transform: uppercase;
+	}
+
+	.proj-title{
+		font-family: 'AlethiaPro-Regular';
+		color: $black;
+		font-size: 28px;
+		line-height: 32px;
+		font-weight: 500;
+	}
+}
