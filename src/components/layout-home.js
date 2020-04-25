@@ -152,7 +152,7 @@ const LayoutHome = ({ children }) => (
 										<div className="columns">
 											<div className="column is-8">
 												<div>
-													<Link to="/journal">See All Journal Entries</Link> 
+													<Link to="/journal-list">See All Journal Entries</Link> 
 												</div>
 											</div>
 											<div className="column is-4">

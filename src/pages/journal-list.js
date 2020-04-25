@@ -26,6 +26,9 @@ const JournalList = () => {
                                 }
                             }
                         }
+                        fields{
+                            slug
+                        }
                     }
                 }
             } 
@@ -41,9 +44,13 @@ const JournalList = () => {
             </div>	
             <div className="column is-rest">	
                 <Helmet />
-                <nav className="is-hidden-mobile navbar-general">
-                    <Navbar/>
-                </nav>
+                <div className="columns">
+                    <div className="column is-12">
+                        <nav className="is-hidden-mobile navbar-general">
+                            <Navbar/>
+                        </nav>
+                    </div>
+                </div>
 
                 <div className="columns is-multiline journal-list">
                     {data.allMarkdownRemark.edges.map((edge) => {
@@ -51,12 +58,12 @@ const JournalList = () => {
 
                             <div className="column is-3">
                                 <div className="card-image">
-                                    <Link to="/post">
+                                    <Link to={`/journal/${edge.node.fields.slug}`}>
                                         <Img className="image"  fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid}/>
                                     </Link>
                                 </div>
                                 <div className="card-content">
-                                    <Link to="/post">
+                                    <Link to={`/journal/${edge.node.fields.slug}`}>
                                         <p className="proj-cat">{edge.node.frontmatter.category}</p>
                                         <p className="proj-title">
                                             {edge.node.frontmatter.title}

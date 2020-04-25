@@ -7,4 +7,7 @@ featuredImage: '../../images/image-1.png'
 path: '/first-post'
 ---
 
+![Featured Image](../../images/image-2.png)
+
 This is the first post
+
