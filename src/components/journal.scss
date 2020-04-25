@@ -1,0 +1,143 @@
+.journal{
+    .post-title{
+        padding-top: 5.25em;
+        padding-left: 10%;
+        padding-right: 10%;
+        h1{
+            font-family: 'AlethiaPro-Regular';
+            font-size: 55px;
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    
+        p{
+            font-family: 'Barlow';
+            color: $green;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1.2;
+            letter-spacing: 2.8px;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .featured-image{
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 1rem;
+    }
+
+    .border-author{
+        border-top: 1px solid $dark-grey;
+        border-bottom: 1px solid $dark-grey;
+        margin-top: 32px;
+    }
+    
+    .border-gallery-thumb{
+        border-top: 1px solid $dark-grey;
+        border-bottom: 1px solid $dark-grey;
+        padding-top: 32px;
+        margin-bottom: 64px !important;
+    }
+    
+    .border-tag{
+        border-top: 1px solid $dark-grey;
+        border-bottom: 1px solid $dark-grey;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-bottom: 150px !important;
+    }
+    
+    
+    .proj-date{
+        font-family: 'Barlow';
+        color: $darkest-grey;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: 600;
+        letter-spacing: 1pt;
+        color: $darkest-grey;
+    }
+    
+    .proj-hour{
+        @extend .proj-date;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    
+    .author{
+        @extend .proj-date;
+        text-align: right;
+        font-weight: 500;
+    }
+    
+    .quotes{
+        font-family: 'AlethiaPro-Regular';
+        font-size: 1.5rem;
+        line-height: 1.25;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    
+    .body-post{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+
+        h1{
+            font-family: 'AlethiaPro-Regular';
+            font-size: 1.75rem;
+            line-height: 1.2;
+            letter-spacing: 1.3px;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-family: 'AlethiaPro-Regular';
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+    
+        h2{
+            font-family: 'AlethiaPro-Regular';
+            font-size: 1.5rem;
+            line-height: 1.2;
+              letter-spacing: 1.3px;
+              margin-bottom: 1rem;
+        }
+
+        .gatsby-resp-image-link{
+            margin-top: 2em !important;
+            margin-bottom: 2em !important;
+        }
+
+    }
+    
+    .tags .tag:not(:last-child){
+        margin-right: 1rem;
+    }
+    
+    .tag, .tag:not(body){
+        height: 40px;
+        border: solid 1px $dark-grey;
+        background-color: $white;
+        font-family: Barlow;
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: $black;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-transform: uppercase;
+        border-radius: 0;
+    }
+    
+}

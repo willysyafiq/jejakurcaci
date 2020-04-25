@@ -9,7 +9,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import { Link } from 'gatsby';
 import HeroSlider from './hero-slider';
 import ArrowRBlack from '../images/arrow-right-black.svg';
-import Image1 from '../images/jejakurcaci_masami_daiki_couplesession-3.jpg';
+import Image1 from '../images/article/jejakurcaci_masami_daiki_couplesession-4.jpg';
 
 const LayoutGeneral = ({ children }) => (
     <div className="columns is-gapless">

@@ -11,13 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
 
-// Importing Custom Style per-Component
-@import './subscription.scss';
-@import './footer.scss';
-@import './listing.scss';
-@import './project-carousel.scss';
-@import './navbar.scss';
-@import './hero-home.scss';
+
 
 @font-face {
 	font-family: "Regalis-Regular";
@@ -476,3 +470,11 @@ body{
 	padding: 0 !important;
 }
 
+// Importing Custom Style per-Component
+@import './subscription.scss';
+@import './footer.scss';
+@import './listing.scss';
+@import './project-carousel.scss';
+@import './navbar.scss';
+@import './hero-home.scss';
+@import './journal.scss';
