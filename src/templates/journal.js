@@ -69,10 +69,8 @@ const journal = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="column is-7">
-                        <div className="body-post">
-                            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
-                        </div>
+                    <div className="column is-7 body-post">
+                        <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
                     </div>  
                     <div className="column is-10 border-tag">
                         <div class="tags">
@@ -84,13 +82,13 @@ const journal = (props) => {
 
                     <NextJournal/>
 
-                    
                 </div>
-
+                
                     <Footer/>
+
             </div>
         </div>
-
+ 
     )
 }
 

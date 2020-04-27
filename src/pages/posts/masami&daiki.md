@@ -2,7 +2,7 @@
 title: 'Ghufron Yazid – Floral Designer'
 date: 2020-04-01 01:00:00:00
 author: 'Dani Effendi'
-category: 'Journal - People'
+category: 'in People'
 featuredImage: '../../images/article/DSC02776.jpg'
 path: '/first-post'
 ---

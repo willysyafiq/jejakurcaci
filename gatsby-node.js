@@ -18,7 +18,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
 
 
-// 1. Get path to tempalte
+// 1. Get path to template
 // 2. Get markdown data 
 // 3. Create new pages
 

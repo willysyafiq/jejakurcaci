@@ -120,7 +120,7 @@ Turned out, they were more than happy to! It was as if they were back into the c
                         </div>
 
                     
-                        <div className="columns is-multiline read-next">
+                        <div className="columns is-multiline read-next-journal">
                             <div className="column is-12">
                                 <section className="read-next-title">
                                     <div className="level featured-heading">
