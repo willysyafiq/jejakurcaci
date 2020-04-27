@@ -52,28 +52,32 @@ const JournalList = () => {
                     </div>
                 </div>
 
-                <div className="columns is-multiline journal-list">
-                    {data.allMarkdownRemark.edges.map((edge) => {
-                        return(
+                <div className="columns journal-list is-centered">
+                    <div className="column is-10">
+                        <div className="columns is-multiline">
+                        {data.allMarkdownRemark.edges.map((edge) => {
+                            return(
 
-                            <div className="column is-3">
-                                <div className="card-image">
-                                    <Link to={`/journal/${edge.node.fields.slug}`}>
-                                        <Img className="image"  fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid}/>
-                                    </Link>
+                                <div className="column is-3">
+                                    <div className="card-image">
+                                        <Link to={`/journal/${edge.node.fields.slug}`}>
+                                            <Img className="image"  fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid}/>
+                                        </Link>
+                                    </div>
+                                    <div className="card-content">
+                                        <Link to={`/journal/${edge.node.fields.slug}`}>
+                                            <p className="proj-cat">{edge.node.frontmatter.category}</p>
+                                            <p className="proj-title">
+                                                {edge.node.frontmatter.title}
+                                            </p>
+                                        </Link>
+                                    </div>
                                 </div>
-                                <div className="card-content">
-                                    <Link to={`/journal/${edge.node.fields.slug}`}>
-                                        <p className="proj-cat">{edge.node.frontmatter.category}</p>
-                                        <p className="proj-title">
-                                            {edge.node.frontmatter.title}
-                                        </p>
-                                    </Link>
-                                </div>
-                            </div>
 
-                        )
-                    })}
+                            )
+                        })}
+                        </div>
+                    </div>
                 </div>
                         
             </div>

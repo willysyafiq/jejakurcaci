@@ -34,7 +34,8 @@
     .border-author{
         border-top: 1px solid $dark-grey;
         border-bottom: 1px solid $dark-grey;
-        margin-top: 32px;
+        margin-top: 2em;
+        margin-bottom: 1em;
     }
     
     .border-gallery-thumb{
@@ -49,7 +50,7 @@
         border-bottom: 1px solid $dark-grey;
         padding-top: 24px;
         padding-bottom: 24px;
-        margin-bottom: 150px !important;
+        margin-bottom: 10em !important;
     }
     
     
@@ -87,8 +88,8 @@
     
     
     .body-post{
-        padding-top: 2rem;
-        padding-bottom: 3rem;
+        padding-top: 0.25rem;
+        margin-bottom: 0em;
 
         h1{
             font-family: 'AlethiaPro-Regular';
@@ -138,6 +139,10 @@
         padding-right: 1.5rem;
         text-transform: uppercase;
         border-radius: 0;
+    }
+
+    .read-next{
+        margin-bottom: 4em;
     }
     
 }
