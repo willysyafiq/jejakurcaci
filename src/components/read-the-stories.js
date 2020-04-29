@@ -50,13 +50,13 @@ const ReadTheStories = () => {
                                 <div className="column is-4">
                                     <div className="card-image">
                                         <div className="image">
-                                            <Link to={`/photography/${edge.node.fields.slug}`}>
+                                            <Link to={`/journal/${edge.node.fields.slug}`}>
                                                 <Img className="image"  fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid}/>
                                             </Link>
                                         </div>
                                     </div>
                                     <div className="card card-content">
-                                        <Link to={`/photography/${edge.node.fields.slug}`}>
+                                        <Link to={`/journal/${edge.node.fields.slug}`}>
                                             <p className="proj-cat">{edge.node.frontmatter.category}</p>
                                             <p className="proj-title">
                                                 {edge.node.frontmatter.title}
