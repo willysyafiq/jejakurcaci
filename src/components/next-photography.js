@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from "gatsby-image";
 
-const NextLoveStories = () => {
+const NextPhotography = () => {
 
     const data = useStaticQuery(graphql`
         query{
@@ -81,4 +81,4 @@ const NextLoveStories = () => {
 }
 
 
-export default NextLoveStories
+export default NextPhotography

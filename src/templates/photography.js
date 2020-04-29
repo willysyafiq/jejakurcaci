@@ -6,7 +6,7 @@ import Navbar from '../components/navbar';
 import SideMenu from '../components/side-menu';
 import Footer from '../components/footer';
 import Img from "gatsby-image";
-import NextJournal from "../components/next-journal.js";
+import NextPhotography from "../components/next-photography.js";
 
 
 export const query = graphql`
@@ -80,7 +80,7 @@ const photography = (props) => {
                         </div>
                     </div>
 
-                    <NextJournal/>
+                    <NextPhotography/>
 
                 </div>
                 
