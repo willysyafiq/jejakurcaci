@@ -30,7 +30,7 @@ const LayoutHome = ({ children }) => (
 
 			<RecentWorks/>
 
-			<section className="section project-list-title">
+			<section className="section read-the-stories">
 				<div className="level featured-heading">
 					<div className="level-left">
 						<h2 className="is-size-2 level-item group-list-title">Read the Stories</h2>

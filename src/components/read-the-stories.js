@@ -41,7 +41,7 @@ const ReadTheStories = () => {
     `)
 
     return(
-        <section className="section project-thumbnail">
+        <div className="section project-thumbnail">
 			<div className="columns is-multiline padding-list">
                 <div className="column is-12">
                     <div className="columns is-multiline">
@@ -85,7 +85,7 @@ const ReadTheStories = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 	

@@ -5,11 +5,11 @@
 	padding-right: 1rem;
 }
 
-.project-list-title{
+.recent-works{
 	padding-left: 4.5rem;
 	padding-right: 4.5rem;
 	padding-bottom: 0;
-	padding-top: 100px;
+	padding-top: 6.25rem;
 	.featured-heading{
 		border-bottom: 1px solid $black;
 		padding-bottom: 8px;
@@ -108,6 +108,11 @@
 		color: $black;
 	}
 
+}
+
+.read-the-stories{
+	@extend .recent-works;
+	padding-top: 4.25rem;
 }
 
 

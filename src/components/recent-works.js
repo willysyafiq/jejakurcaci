@@ -69,7 +69,7 @@ const RecentWorks = () => {
 
     return(
     <section>
-        <div className="section project-list-title">
+        <div className="section recent-works">
             <div className="level featured-heading">
                 <div className="level-left">
                     <h2 className="is-size-2 level-item group-list-title">Recent Works</h2>
