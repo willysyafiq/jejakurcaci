@@ -17,37 +17,95 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
 
 
-
-// 1. Get path to template
-// 2. Get markdown data 
-// 3. Create new pages
-
+// Create pages for journal and photography separately using two separate
+// queries. We use the `graphql` function which returns a Promise
+// and ultimately resolve all of them using Promise.all(Promise[])
 module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const journalTemplate = path.resolve('./src/templates/journal.js')
-    const res = await graphql(`
-        query{
-            allMarkdownRemark{
-                edges{
-                  node{
-                    fields{
-                      slug
+    const photographyTemplate = path.resolve('./src/templates/photography.js')
+    
+    // Individual journals pages
+	const journals = graphql(`
+    {
+        journals: allMarkdownRemark(
+            filter: { fileAbsolutePath: { glob: "**/src/pages/journal/*.md" } },
+            sort: { fields: [frontmatter___date], order: DESC }
+        ) {
+            edges {
+                node {
+                    fields {
+                        slug
                     }
-                  }
                 }
-              }
-        }       
-    `)
-
-    res.data.allMarkdownRemark.edges.forEach((edge) => {
-        createPage({
-            component: journalTemplate,
-            path: `/journal/${edge.node.fields.slug}`,
-            context: {
-                slug : edge.node.fields.slug
             }
-        })
-    })
+        }
+    }
+    `).then(result => {
+        if (result.errors) {
+            Promise.reject(result.errors);
+        }
+
+        // Create journal pages
+        result.data.journals.edges.forEach(({ node }) => {
+            createPage({
+                component: journalTemplate,
+                path: `/journal/${node.fields.slug}`,
+                context: {
+                    slug: node.fields.slug
+                }
+            });
+        });
+    });
+
+    // Individual photographs pages
+    const photographs = graphql(`
+        {
+            photographs: allMarkdownRemark(
+                filter: {
+                    fileAbsolutePath: { glob: "**/src/pages/photography/*.md" }
+                },
+                sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+                edges {
+                    node {
+                        fields {
+                            slug
+                        }
+                    }
+                }
+            }
+        }
+    `).then(result => {
+        if (result.errors) {
+            Promise.reject(result.errors);
+        }
+
+        // Create photography pages
+        result.data.photographs.edges.forEach(({ node }) => {
+            createPage({
+                component: photographyTemplate,
+                path: `/photography/${node.fields.slug}`,
+                context: {
+                    slug: node.fields.slug
+                }
+            });
+        });
+    });
+
+    // Return a Promise which would wait for both the queries to resolve
+    return Promise.all([journals, photographs]);
+
+
+    // res.data.allMarkdownRemark.edges.forEach((edge) => {
+    //     createPage({
+    //         component: journalTemplate,
+    //         path: `/journal/${edge.node.fields.slug}`,
+    //         context: {
+    //             slug : edge.node.fields.slug
+    //         }
+    //     })
+    // })
 
 
 }
