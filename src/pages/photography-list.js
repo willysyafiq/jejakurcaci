@@ -13,7 +13,7 @@ const PhotographyList = () => {
         query{
             allMarkdownRemark(
                 filter: {
-                    frontmatter: {category: {in: ["Love Stories → Couples & Lovebirds"]}}
+                    frontmatter: {category: {in: ["Love Stories → Couples & Lovebirds", "Love Stories → Folks & Families"]}}
                 }
             ){
                 edges{

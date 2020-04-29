@@ -2,7 +2,7 @@
 title: "Masami & Daiki Gaienmae, Japan, 2019"
 date: 2019-01-01 01:00:00:00
 author: "Dani Effendi"
-category: 'Love Stories → Couples & Lovebirds'
+category: "Love Stories → Couples & Lovebirds"
 featuredImage: "../../images/article/jejakurcaci_masami_daiki_couplesession-3.jpg"
 tags: ["#gaienmae", "#tokyo", "japan", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
 ---

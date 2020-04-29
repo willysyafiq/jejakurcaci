@@ -1,122 +1,93 @@
 import React from 'react';
-import './style.scss';
-import featured1 from '../images/image-1.png';
-import featured2 from '../images/image-2.png';
-import featured3 from '../images/image-3.png';
-import featured4 from '../images/image-4.png';
-import featured5 from '../images/image-5.png';
-import ArrowRBlack from '../images/arrow-right-black.svg';
+import '../components/style.scss';
 import { Link } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from "gatsby-image";
+import ArrowRBlack from '../images/arrow-right-black.svg';
 
-const ReadTheStories = ({ title, author, category, path, date, body }) => { 
-    return( 
-        
-        <div className="column is-4">
-            <div className="card-image">
-                <div className="image">
-                    <Link to="/post">
-                        <img src={featured2} alt=""></img>
-                    </Link>
+const ReadTheStories = () => { 
+
+    const data = useStaticQuery(graphql`
+        query{
+            allMarkdownRemark(sort: {
+                    fields: [frontmatter___date]
+                    order: DESC
+                },
+                filter: {
+                    frontmatter: {category: {in: ["Journal - PLACE", "Journal - PEOPLE", "Journal - OTHER"]}}
+                },
+                limit : 5){
+                edges{
+                    node{
+                        frontmatter{
+                            title
+                            category
+                            featuredImage{
+                                childImageSharp {
+                                    fluid(maxWidth: 600) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        fields{
+                            slug
+                        }
+                    }
+                }
+            } 
+
+        }
+    `)
+
+    return(
+        <section className="section project-thumbnail">
+			<div className="columns is-multiline padding-list">
+                <div className="column is-12">
+                    <div className="columns is-multiline">
+                        {data.allMarkdownRemark.edges.map((edge) => {
+                            return(
+                                <div className="column is-4">
+                                    <div className="card-image">
+                                        <div className="image">
+                                            <Link to={`/photography/${edge.node.fields.slug}`}>
+                                                <Img className="image"  fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid}/>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <div className="card card-content">
+                                        <Link to={`/photography/${edge.node.fields.slug}`}>
+                                            <p className="proj-cat">{edge.node.frontmatter.category}</p>
+                                            <p className="proj-title">
+                                                {edge.node.frontmatter.title}
+                                            </p>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )
+                        })}
+
+                                <div className="column is-4">
+                                    <div className="see-all-journal">
+                                        <div className="columns">
+                                            <div className="column is-8">
+                                                <div>
+                                                    <Link to="/journal-list">See All Journal Entries</Link> 
+                                                </div>
+                                            </div>
+                                            <div className="column is-4">
+                                                <img className="image" src={ArrowRBlack} alt="Arrow Right" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </div>
                 </div>
             </div>
-            <div className="card card-content-stories">
-                <p className="proj-cat-stories">{category}</p>
-                <p className="proj-title">
-                    {title}
-                </p>
-            </div>
-        </div>
-        
+        </section>
     )
 }
 	
-    {/* <section className="section project-listing">
-        <div className="level featured-heading">
-            <div className="level-left">
-                <h2 className="is-size-2 level-item">Recent Works</h2>
-            </div>
-            <div className="level-right">
-                <button class="button is-normal level-item">
-                    ALL PHOTOGRAPHY
-                    <img className="image see-all" src={ArrowRBlack} alt="Arrow Right" />	
-                </button>
-            </div>
-        </div>
-        <div className="columns">
-            <div className="column is-half">
-                <div className="card-image">
-                    <div className="image">
-                        <img src={featured1} alt=""></img>
-                    </div>
-                </div>
-                <div className="card card-content">
-                    <p className="proj-cat">PROJECTS → MISCELLANEOUS</p>
-                    <p className="featured-proj-title">
-                        Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
-                    </p>
-                </div>
-            </div>
-            <div className="column">
-                <div className="columns">
-                    <div className="column">
-                        <div className="card-image">
-                            <div className="image">
-                                <img src={featured2} alt=""></img>
-                            </div>
-                        </div>
-                        <div className="card card-content">
-                            <p className="proj-cat">PROJECTS → MISCELLANEOUS</p>
-                            <p className="proj-title">
-                                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
-                            </p>
-                        </div>
-                        <div className="card-image">
-                            <div className="image">
-                                <img src={featured3} alt=""></img>
-                            </div>
-                        </div>
-                        <div className="card card-content">
-                            <p className="proj-cat">PROJECTS → MISCELLANEOUS</p>
-                            <p className="proj-title">
-                                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
-                            </p>
-                        </div>
-                    </div>
-                    <div className="column">
-                        <div className="card-image">
-                            <div className="image">
-                                <img src={featured4} alt=""></img>
-                            </div>
-                        </div>
-                        <div className="card card-content">
-                            <p className="proj-cat">PROJECTS → MISCELLANEOUS</p>
-                            <p className="proj-title">
-                                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
-                            </p>
-                        </div>
-                        <div className="card-image">
-                            <div className="image">
-                            <img src={featured5} alt=""></img>
-                            </div>
-                        </div>
-                        <div className="card card-content">
-                            <p className="proj-cat">PROJECTS → MISCELLANEOUS</p>
-                            <p className="proj-title">
-                                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section> */}
-
-   
-
-    
-
-// );
-
 export default ReadTheStories;
 

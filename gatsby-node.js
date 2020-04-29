@@ -96,16 +96,4 @@ module.exports.createPages = async ({ graphql, actions }) => {
     // Return a Promise which would wait for both the queries to resolve
     return Promise.all([journals, photographs]);
 
-
-    // res.data.allMarkdownRemark.edges.forEach((edge) => {
-    //     createPage({
-    //         component: journalTemplate,
-    //         path: `/journal/${edge.node.fields.slug}`,
-    //         context: {
-    //             slug : edge.node.fields.slug
-    //         }
-    //     })
-    // })
-
-
 }

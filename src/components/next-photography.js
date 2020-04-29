@@ -10,12 +10,13 @@ const NextPhotography = () => {
         query{
             allMarkdownRemark(sort: {
                     fields: [frontmatter___date]
-                    order: DESC
+                    order: ASC
                 },
                 filter: {
                     frontmatter: {category: {in: ["Love Stories → Couples & Lovebirds"]}}
                 },
-                limit : 3){
+                limit : 3
+                ){
                 edges{
                     node{
                         frontmatter{
@@ -58,7 +59,7 @@ const NextPhotography = () => {
                         <div className="column is-4">
                             <div className="card-image">
                                 <div className="image">
-                                    <Link to={`/journal/${edge.node.fields.slug}`}>
+                                    <Link to={`/photography/${edge.node.fields.slug}`}>
                                         <Img className="image"  fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid}/>
                                     </Link>
                                 </div>

@@ -10,7 +10,7 @@ const NextJournal = () => {
         query{
             allMarkdownRemark(sort: {
                     fields: [frontmatter___date]
-                    order: DESC
+                    order: ASC
                 },
                 filter: {
                     frontmatter: {category: {in: ["Journal - PLACE", "Journal - PEOPLE", "Journal - OTHER"]}}
