@@ -7,12 +7,15 @@ import SideMenu from '../components/side-menu';
 import Footer from '../components/footer';
 import { Link } from 'gatsby';
 import Img from "gatsby-image";
-import featured2 from '../images/image-2.png';
 
 const JournalList = () => {
     const data = useStaticQuery(graphql`
         query{
-            allMarkdownRemark{
+            allMarkdownRemark(
+                filter: {
+                    frontmatter: {category: {in: ["Journal - PLACE", "Journal - PEOPLE", "Journal - OTHER"]}}
+                }
+            ){
                 edges{
                     node{
                         frontmatter{
@@ -58,7 +61,7 @@ const JournalList = () => {
                         {data.allMarkdownRemark.edges.map((edge) => {
                             return(
 
-                                <div className="column is-3">
+                                <div className="column is-4">
                                     <div className="card-image">
                                         <Link to={`/journal/${edge.node.fields.slug}`}>
                                             <Img className="image"  fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid}/>
@@ -79,7 +82,7 @@ const JournalList = () => {
                         </div>
                     </div>
                 </div>
-                        
+                <Footer/>
             </div>
         </div>
 

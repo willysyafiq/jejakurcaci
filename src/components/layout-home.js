@@ -186,7 +186,6 @@ const indexQuery = graphql`
                     date
                     author
 					category
-                    path
                     }
                     excerpt
                 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../components/style.scss';
 import { Link } from 'gatsby';
-import Image1 from '../images/article/jejakurcaci_masami_daiki_couplesession-4.jpg';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from "gatsby-image";
 
@@ -14,7 +13,7 @@ const NextJournal = () => {
                     order: DESC
                 },
                 filter: {
-                    frontmatter: {category: {in: ["in PEOPLE", "in PLACES", "AND OTHER STORIES"]}}
+                    frontmatter: {category: {in: ["Journal - PLACE", "Journal - PEOPLE", "Journal - OTHER"]}}
                 },
                 limit : 3){
                 edges{
