@@ -74,9 +74,9 @@ const journal = (props) => {
                     </div>  
                     <div className="column is-10 border-tag">
                         <div class="tags">
-                            <span class="tag">PHOTOGRAPHY</span>
-                            <span class="tag">WEDDING</span>
-                            <span class="tag">JAKARTA</span>
+                            <span class="tag">JOURNAL</span>
+                            <span class="tag">PEOPLE</span>
+                            <span class="tag">BANDUNG</span>
                         </div>
                     </div>
 

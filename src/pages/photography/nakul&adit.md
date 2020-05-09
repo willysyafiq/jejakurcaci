@@ -5,6 +5,7 @@ author: "Dani Effendi"
 category: "Love Stories → Couples & Lovebirds"
 featuredImage: "../../images/article/jejakurcaci_nakul_adit_couplesession-23.jpg"
 tags: ["#bandung", "#indonesia", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
+quote: "Nakul Adit, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
 ---
 
 

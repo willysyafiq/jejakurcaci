@@ -41,9 +41,9 @@ const LayoutGeneral = ({ children }) => (
                         </div>
                         <div className="columns">
                             <div className="column is-8 is-offset-2">
-                                <p className="quotes">Cat ipsum dolor sit amet, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand.</p>
+                                <p className="quote">Cat ipsum dolor sit amet, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand.</p>
                             </div>
-                        </div>
+                        </div> 
                         <div className="columns border-gallery-thumb">
                             <div className="column is-5">
                                 <h3 className="second-post-title">Masami & Daiki <br /> Gaienmae, Japan, 2019</h3>

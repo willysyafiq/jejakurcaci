@@ -6,7 +6,10 @@ import Navbar from '../components/navbar';
 import SideMenu from '../components/side-menu';
 import Footer from '../components/footer';
 import Img from "gatsby-image";
+import { Link } from 'gatsby';
+import ArrowRBlack from '../images/arrow-right-black.svg';
 import NextPhotography from "../components/next-photography.js";
+import Image1 from '../images/article/jejakurcaci_masami_daiki_couplesession-3.jpg';
 
 
 export const query = graphql`
@@ -25,6 +28,8 @@ export const query = graphql`
         frontmatter{
             title
             category
+            quote
+            tags
             featuredImage{
                 childImageSharp {
                     fluid(maxWidth: 700, quality: 80) {
@@ -50,7 +55,7 @@ const photography = (props) => {
                 <nav className="is-hidden-mobile navbar-general">
                     <Navbar/>
                 </nav>
-                <div className="columns is-multiline is-centered no-bot-margin journal">
+                <div className="columns is-multiline is-centered no-bot-margin photography">
                     <div className="column is-10">
                         <div className="post-title">
                             <p>{props.data.markdownRemark.frontmatter.category}</p>
@@ -69,14 +74,65 @@ const photography = (props) => {
                             </div>
                         </div>
                     </div>
+                    <div className="column is-8">
+                        <p className="quote">{props.data.markdownRemark.frontmatter.quote}</p>
+                    </div>
+                    <div className="column is-10">
+                        <div className="columns border-gallery-thumb">
+                            <div className="column is-5">
+                                <h3 className="second-post-title">Masami & Daiki <br /> Gaienmae, Japan, 2019</h3>
+                            </div>
+                            <div className="column is-7 thumbnail-gallery no-bot-padding">
+                                <div className="columns">
+                                    <div className="column is-6 no-bot-padding">
+                                        <p className="gallery-title">GALLERY</p>
+                                    </div>
+                                    <div className="column is-6 no-bot-padding">
+                                        <p className="images-count">35 IMAGES</p>
+                                    </div>
+                                </div>
+                                <div className="columns is-multiline">
+                                    <div className="column is-4">
+                                        <img className="image" src={Image1} alt="Thumbnail" />
+                                    </div>
+                                    <div className="column is-4">
+                                        <img className="image" src={Image1} alt="Thumbnail" />
+                                    </div>
+                                    <div className="column is-4">
+                                        <img className="image" src={Image1} alt="Thumbnail" />
+                                    </div>
+                                    <div className="column is-4">
+                                        <img className="image" src={Image1} alt="Thumbnail" />
+                                    </div>
+                                    <div className="column is-4">
+                                        <img className="image" src={Image1} alt="Thumbnail" />
+                                    </div>
+                                    <div className="column is-4">
+                                        <div className="see-all-thumb">
+                                            <div className="columns">
+                                                <div className="column is-8">
+                                                    <div>
+                                                        <Link to="/carousel" data-target="modal">See All Images</Link> 
+                                                    </div>
+                                                </div>
+                                                <div className="column is-4">
+                                                    <img className="image" src={ArrowRBlack} alt="Arrow Right" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="column is-7 body-post">
                         <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
                     </div>  
                     <div className="column is-10 border-tag">
                         <div class="tags">
-                            <span class="tag">PHOTOGRAPHY</span>
-                            <span class="tag">WEDDING</span>
-                            <span class="tag">JAKARTA</span>
+                            <span class="tag">                    
+                                {props.data.markdownRemark.frontmatter.tags}
+                            </span>
                         </div>
                     </div>
 
