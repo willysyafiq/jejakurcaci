@@ -3,7 +3,7 @@ import './style.scss';
 import Helmet from './helmet';
 import HeroSlider from './hero-slider';
 import SideMenu from './side-menu';
-import Navbar from './navbar';
+import NavbarHome from './navbar-home';
 import Footer from './footer';
 import ReadTheStories from './read-the-stories';
 import Subscription from './subscription';
@@ -24,7 +24,7 @@ const LayoutHome = ({ children }) => (
 
 			<Helmet />
 			<nav className="is-hidden-mobile navbar-home">
-				<Navbar/>
+				<NavbarHome/>
 			</nav>
 			<HeroSlider/>
 

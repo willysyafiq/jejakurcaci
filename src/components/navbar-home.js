@@ -8,7 +8,7 @@ import PinterestBlack from '../images/pinterest-black.svg';
 import FacebookBlack from '../images/facebook-black.svg';
 import InstagramBlack from '../images/instagram-black.svg';
 
-const Navbar = () => (
+const NavbarHome = () => (
 	<div>
 		<nav className="navbar border-bottom">
 			<div className="container">
@@ -27,7 +27,7 @@ const Navbar = () => (
 							</a>
 						</span>
 					</div>
-					<div className="column is-12 second-row">
+					<div className="column is-12 second-row hidden-home">
 					<div className="columns">
 						<div className="column is-4">
 							<div class="breadcrumb" >
@@ -68,4 +68,4 @@ const Navbar = () => (
 	</div>
 );
 
-export default Navbar;
+export default NavbarHome;
