@@ -470,6 +470,10 @@ body{
 	padding: 0 !important;
 }
 
+.no-right-padding{
+	padding-right: 0 !important;
+}
+
 // Importing Custom Style per-Component
 @import './subscription.scss';
 @import './footer.scss';
@@ -479,3 +483,5 @@ body{
 @import './hero-home.scss';
 @import './journal.scss';
 @import './photography.scss';
+@import './pagination.scss';
+@import './filter-category.scss';

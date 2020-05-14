@@ -1,0 +1,73 @@
+.filter-section{
+
+    margin-bottom: 2rem !important;
+    padding-top: 100px;
+    .label-section{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .filter{
+        border: 1px solid $black;
+        padding: 8px 30px;
+        margin-right: 12px;
+        font-family: 'Barlow';
+        font-size: 1rem;
+        line-height: 1.2;
+        letter-spacing: 1.7px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .filter:focus, .filter-active:focus{
+        outline-color: $white;
+    }
+
+    .filter:hover{
+        color: $green;
+    }
+
+    .filter-active{
+        @extend .filter;
+        background: $black;
+        color: $white;
+    }
+
+    .filter-active:hover{
+        color: $white;
+    }
+
+    .reset-filter{
+        text-align: right;
+        .reset-button{
+            font-family: 'Barlow';
+            font-size: 1rem;
+            line-height: 1.2;
+            letter-spacing: 1.7px;
+            margin-bottom: 0;
+            background: $white;
+            border: none;
+            cursor: pointer;
+        }
+        .reset-button:focus{
+            outline-color: $white;
+        }
+        .reset-button:hover{
+            color: $green;
+            font-weight: 600;
+        }
+        padding-top: 0px;
+    }
+
+    .show-results{
+        p{
+            font-family: 'Barlow';
+            font-size: 1rem;
+            line-height: 1.2;
+            letter-spacing: 1.7px;
+            margin-bottom: 0;
+        }
+        padding-top: 0px;
+    }
+
+}

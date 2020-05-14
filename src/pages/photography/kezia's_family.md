@@ -1,6 +1,6 @@
 ---
-title: "Kezia’s Family, Bandung, 2019"
-date: 2019-01-01 01:00:00:00
+title: "Kezia’s Family, Bandung"
+date: "2019-01-01"
 author: "Dani Effendi"
 category: "Love Stories → Folks & Families"
 featuredImage: "../../images/article/jejakurcaci_kezia_familysession-11.jpg"

@@ -1,6 +1,6 @@
 ---
-title: "Ajoon Muklay Japan 2019"
-date: 2019-01-01 01:00:00:00
+title: "Ajoon Muklay, Japan"
+date: "2019-01-01"
 author: "Dani Effendi"
 category: "Love Stories → Couples & Lovebirds"
 featuredImage: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-28.jpg"

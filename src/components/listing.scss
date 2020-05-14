@@ -75,7 +75,7 @@
 		font-weight: bold;
 		margin-bottom: .5rem;
 		line-height: 1.18;
-  		letter-spacing: 1.1px;
+  		letter-spacing: 1.3px;
 		text-transform: uppercase;
 	}
 	.proj-cat-stories{
@@ -170,9 +170,9 @@
 			color: $green;
 			font-size: 12px;
 			line-height: 1.2;
-			font-weight: 600;
+			font-weight: 700;
 			margin-bottom: 12px;
-			letter-spacing: 2pt;
+			letter-spacing: 1.3pt;
 			text-transform: uppercase;
 		}
 		.proj-title{
@@ -209,14 +209,25 @@
 		padding-right: 0;
 	}
 
+	.proj-date{
+		font-family: 'Barlow';
+		color: #436d6e;
+		font-size: 0.688rem;
+		line-height: 1.23;
+		font-weight: 500;
+		margin-bottom: 8px;
+		letter-spacing: 1.3pt;
+		text-transform: uppercase;
+	}
+
 	.proj-cat{
 		font-family: 'Barlow';
 		color: $green;
-		font-size: 12px;
-		line-height: 1.2;
-		font-weight: 600;
-		margin-bottom: 12px;
-		letter-spacing: 2pt;
+		font-size: 0.813rem;
+		line-height: 1.23;
+		font-weight: 700;
+		margin-bottom: 4px;
+		letter-spacing: 1.3pt;
 		text-transform: uppercase;
 	}
 
@@ -226,10 +237,43 @@
 		font-size: 28px;
 		line-height: 32px;
 		font-weight: 500;
+		letter-spacing: normal;
 	}
 
 	.proj-title:hover{
 		color: $green;
 	}
-	
+
+	.proj-excerp{
+		font-family: 'Cormorant Garamond';
+		font-size: 1.5rem;
+		line-height: 1.21;
+		letter-spacing: normal;
+		padding-top: 24px;
+		color: $black;
+	}
+}
+
+
+
+
+// Listing Photography
+
+.photography-list{
+	@extend .journal-list;
+	.featured-image{
+		height: 100vh;
+		margin-top: -127px;
+	}
+
+	.container-relative{
+		position: relative;
+		bottom: 0;
+	}
+	.padding-featured{
+		padding-left: 2.5rem;
+		position: absolute;
+		bottom: 2.5rem;
+		right: 0;
+	}
 }

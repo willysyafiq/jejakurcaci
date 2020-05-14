@@ -76,7 +76,7 @@ const RecentWorks = () => {
                 </div>
                 <div className="level-right">
                     <Link to="/photography-list" class="button is-normal level-item">
-                        ALL PHOTOGRAPHY
+                        SEE ALL WORKS
                             <img className="image see-all" src={ArrowRBlack} alt="Arrow Right" />	
                     </Link>
                 </div>

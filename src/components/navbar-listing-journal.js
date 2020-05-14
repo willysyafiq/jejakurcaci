@@ -8,34 +8,37 @@ import PinterestBlack from '../images/pinterest-black.svg';
 import FacebookBlack from '../images/facebook-black.svg';
 import InstagramBlack from '../images/instagram-black.svg';
 
-const NavbarHome = () => (
+const NavbarListingJournal = () => (
 	<div>
 		<nav className="navbar border-bottom">
 			<div className="container">
 				<div className="navbar-menu columns is-multiline">
-					<div className="column navbar-brand is-5">
+					<div className="column is-12 first-row">
+						<div className="level">
+							<div className="level-item">
+								<Link to="/">
+									<img className="image brand-logo" src={BrandLogo} alt="Brand Logo" />	
+								</Link>
+							</div>
+							<Link to="/" className="search-top-right">
+								<span className="navbar-item">
+									<img className="image search" src={SearchBlack} alt="Search Icon" />	
+								</span>
+							</Link>
+						</div>
 					</div>
-					<div className="column navbar-mid">
-						<Link to="/">
-							<img className="image brand-logo" src={BrandLogo} alt="Brand Logo" />	
-						</Link>
-					</div>
-					<div className="navbar-end">
-						<span className="navbar-item">
-							<a href="#">
-								<img className="image search" src={SearchBlack} alt="Search Icon" />	
-							</a>
-						</span>
-					</div>
-					<div className="column is-12 second-row hidden-home">
+					<div className="column is-12 second-row">
 					<div className="columns">
 						<div className="column is-4">
 							<div class="breadcrumb" >
-								{/* Hidden */}
+								<ul>
+									<li><Link to="/">Home</Link></li>
+									<li class="is-active"><Link to="#" aria-current="page">Journal</Link></li>
+								</ul>
 							</div>
 						</div>
 						<div className="column is-4">
-							<h1>Love Stories</h1>
+							<h1>Journal</h1>
 						</div>
 						<div className="column is-4">
 							<div className="level-right">
@@ -65,4 +68,4 @@ const NavbarHome = () => (
 	</div>
 );
 
-export default NavbarHome;
+export default NavbarListingJournal;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 import Helmet from './helmet';
-import Navbar from './navbar';
+import NavbarPhotography from './navbar-photography';
 import SideMenu from './side-menu';
 import Subscription from './subscription';
 import Footer from './footer';
@@ -19,7 +19,7 @@ const LayoutGeneral = ({ children }) => (
         <div className="column is-rest">	
                 <Helmet />
                 <nav className="is-hidden-mobile navbar-general">
-                    <Navbar/>
+                    <NavbarPhotography/>
                 </nav>
                 <div className="columns">
                     <div className="column is-12 post-title">

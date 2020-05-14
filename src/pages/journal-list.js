@@ -2,7 +2,7 @@ import React from 'react';
 import '../components/style.scss';
 import { graphql, useStaticQuery } from 'gatsby';
 import Helmet from '../components/helmet';
-import Navbar from '../components/navbar';
+import NavbarListingJournal from '../components/navbar-listing-journal';
 import SideMenu from '../components/side-menu';
 import Footer from '../components/footer';
 import { Link } from 'gatsby';
@@ -50,7 +50,7 @@ const JournalList = () => {
                 <div className="columns">
                     <div className="column is-12">
                         <nav className="is-hidden-mobile navbar-general">
-                            <Navbar/>
+                            <NavbarListingJournal/>
                         </nav>
                     </div>
                 </div>

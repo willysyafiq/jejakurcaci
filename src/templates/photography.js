@@ -2,7 +2,7 @@ import React from 'react';
 import '../components/style.scss';
 import { graphql } from 'gatsby'
 import Helmet from '../components/helmet';
-import Navbar from '../components/navbar';
+import NavbarPhotography from '../components/navbar-photography';
 import SideMenu from '../components/side-menu';
 import Footer from '../components/footer';
 import Img from "gatsby-image";
@@ -53,7 +53,7 @@ const photography = (props) => {
             <div className="column is-rest">	
                 <Helmet />
                 <nav className="is-hidden-mobile navbar-general">
-                    <Navbar/>
+                    <NavbarPhotography/>
                 </nav>
                 <div className="columns is-multiline is-centered no-bot-margin photography">
                     <div className="column is-10">
