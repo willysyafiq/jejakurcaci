@@ -25,9 +25,10 @@ export const query = graphql`
         frontmatter{
             title
             category
+            tags
             featuredImage{
                 childImageSharp {
-                    fluid(maxWidth: 700, quality: 80) {
+                    fluid(maxWidth: 1280, quality: 90) {
                         ...GatsbyImageSharpFluid
                     }
                 }
@@ -74,9 +75,13 @@ const journal = (props) => {
                     </div>  
                     <div className="column is-10 border-tag">
                         <div class="tags">
-                            <span class="tag">JOURNAL</span>
-                            <span class="tag">PEOPLE</span>
-                            <span class="tag">BANDUNG</span>
+                            
+                            {props.data.markdownRemark.frontmatter.tags.map((tag) => [
+                                <span className="tag">
+                                    {tag}
+                                </span>
+                            ])}
+
                         </div>
                     </div>
 

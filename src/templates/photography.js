@@ -27,42 +27,42 @@ export const query = graphql`
                     date(formatString: "MMMM D, YYYY")
                     featuredImage{
                         childImageSharp {
-                            fluid(maxWidth: 700, quality: 80) {
+                            fluid(maxWidth: 1280, quality: 90) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail1{
                         childImageSharp {
-                            fluid(maxWidth: 700, quality: 80) {
+                            fluid(maxWidth: 400, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail2{
                         childImageSharp {
-                            fluid(maxWidth: 700, quality: 80) {
+                            fluid(maxWidth: 400, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail3{
                         childImageSharp {
-                            fluid(maxWidth: 700, quality: 80) {
+                            fluid(maxWidth: 400, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail4{
                         childImageSharp {
-                            fluid(maxWidth: 700, quality: 80) {
+                            fluid(maxWidth: 400, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail5{
                         childImageSharp {
-                            fluid(maxWidth: 700, quality: 80) {
+                            fluid(maxWidth: 400, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -70,8 +70,6 @@ export const query = graphql`
                 }
                 html
             }
-
-
     }
 `
 
@@ -173,10 +171,14 @@ const photography = (props) => {
                         <div dangerouslySetInnerHTML={{ __html: props.data.regular.html }}></div>
                     </div>  
                     <div className="column is-10 border-tag">
-                        <div class="tags">
-                            <span class="tag">                    
-                                {props.data.regular.frontmatter.tags}
-                            </span>
+                        <div className="tags">
+                                
+                            {props.data.regular.frontmatter.tags.map((tag) => [
+                                <span className="tag">
+                                    {tag}
+                                </span>
+                            ])}
+
                         </div>
                     </div>
 
