@@ -68,18 +68,20 @@ const ReadTheStories = () => {
                         })}
 
                                 <div className="column is-4">
-                                    <div className="see-all-journal">
-                                        <div className="columns">
-                                            <div className="column is-8">
-                                                <div>
-                                                    <Link to="/journal-list">See All Journal Entries</Link> 
+                                    <Link to="/journal-list">
+                                        <div className="see-all-journal">
+                                            <div className="columns">
+                                                <div className="column is-8">
+                                                    <div>
+                                                        <Link to="/journal-list">See All Journal Entries</Link> 
+                                                    </div>
+                                                </div>
+                                                <div className="column is-4">
+                                                    <img className="image" src={ArrowRBlack} alt="Arrow Right" />
                                                 </div>
                                             </div>
-                                            <div className="column is-4">
-                                                <img className="image" src={ArrowRBlack} alt="Arrow Right" />
-                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
 
                     </div>

@@ -6,6 +6,11 @@ category: "Love Stories → Couples & Lovebirds"
 featuredImage: "../../images/article/convert dng_26.jpg"
 tags: ["#bandung", "#indonesia", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
 quote: "Wanda Izan, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
+thumbnail1: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-01.jpg"
+thumbnail2: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-16.jpg"
+thumbnail3: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-09.jpg"
+thumbnail4: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-30.jpg"
+thumbnail5: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-37.jpg"
 ---
 
 Someone said that if you want to make people do the natural poses, don’t push them into the exact poses you want. Just let them relax and communicate with each other. You’ll see the magic afterwards.
