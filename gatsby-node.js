@@ -97,3 +97,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
     return Promise.all([journals, photographs]);
 
 }
+
+
+// Make sure every image in frontmatter will be a File not a String
+
+exports.sourceNodes = ({ actions, schema }) => {
+    const { createTypes } = actions
+    createTypes(`
+      type MarkdownRemarkFrontmatter {
+        image: File
+      }
+  
+      type MarkdownRemark implements Node {
+        frontmatter: MarkdownRemarkFrontmatter
+      }
+    `)
+  }

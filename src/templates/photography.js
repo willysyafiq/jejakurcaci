@@ -16,13 +16,7 @@ export const query = graphql`
         $slug: String!
     )
     {
-            regular:markdownRemark(
-                fields:{
-                    slug:{
-                        eq: $slug
-                    }
-                }
-            )
+            regular:markdownRemark( fields:{ slug:{ eq: $slug } } )
             {
                 frontmatter{
                     title
@@ -38,28 +32,46 @@ export const query = graphql`
                             }
                         }
                     }
+                    thumbnail1{
+                        childImageSharp {
+                            fluid(maxWidth: 700, quality: 80) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    thumbnail2{
+                        childImageSharp {
+                            fluid(maxWidth: 700, quality: 80) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    thumbnail3{
+                        childImageSharp {
+                            fluid(maxWidth: 700, quality: 80) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    thumbnail4{
+                        childImageSharp {
+                            fluid(maxWidth: 700, quality: 80) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    thumbnail5{
+                        childImageSharp {
+                            fluid(maxWidth: 700, quality: 80) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
                 }
                 html
             }
 
-            # thumbnailSection:markdownRemark(
-            #     fields:{
-            #         slug:{
-            #             eq: $slug
-            #         }
-            #     }
-            # )
-            # {
-            #     frontmatter{
-            #         thumbnail2{
-            #             childImageSharp {
-            #                 fluid(maxWidth: 400, quality: 80) {
-            #                     ...GatsbyImageSharpFluid
-            #                 }
-            #             }
-            #         }
-            #     }
-            # }
+
     }
 `
 
@@ -114,7 +126,27 @@ const photography = (props) => {
                                 <div className="columns is-multiline">
                                     <div className="column is-4">
                                         <Link to="/carousel">
-                                            {/* <Img className="image" fluid={props.data.regular.frontmatter.thumbnail1.childImageSharp.fluid} alt="Thumbnail" /> */}
+                                            <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail1.childImageSharp.fluid}/>
+                                        </Link>
+                                    </div>
+                                    <div className="column is-4">
+                                        <Link to="/carousel">
+                                            <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail2.childImageSharp.fluid}/>
+                                        </Link>
+                                    </div>
+                                    <div className="column is-4">
+                                        <Link to="/carousel">
+                                            <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail3.childImageSharp.fluid}/>
+                                        </Link>
+                                    </div>
+                                    <div className="column is-4">
+                                        <Link to="/carousel">
+                                            <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail4.childImageSharp.fluid}/>
+                                        </Link>
+                                    </div>
+                                    <div className="column is-4">
+                                        <Link to="/carousel">
+                                            <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail5.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">

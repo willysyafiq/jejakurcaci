@@ -3,14 +3,14 @@ title: "Nakul & Adit, Bandung"
 date: "2019-01-01"
 author: "Dani Effendi"
 category: "Love Stories → Couples & Lovebirds"
-featuredImage: "../../images/article/jejakurcaci_nakul_adit_couplesession-23.jpg"
+featuredImage: "../../images/slides/nakul_&_adit/jejakurcaci_nakul_adit_couplesession-23.jpg"
+thumbnail1: "../../images/slides/nakul_&_adit/jejakurcaci_nakul_adit_couplesession-01.jpg"
+thumbnail2: "../../images/slides/nakul_&_adit/jejakurcaci_nakul_adit_couplesession-02.jpg"
+thumbnail3: "../../images/slides/nakul_&_adit/jejakurcaci_nakul_adit_couplesession-22.jpg"
+thumbnail4: "../../images/slides/nakul_&_adit/jejakurcaci_nakul_adit_couplesession-38.jpg"
+thumbnail5: "../../images/slides/nakul_&_adit/jejakurcaci_nakul_adit_couplesession-40.jpg"
 tags: ["#bandung", "#indonesia", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
 quote: "Nakul Adit, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
-thumbnail1: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-01.jpg"
-thumbnail2: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-16.jpg"
-thumbnail3: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-09.jpg"
-thumbnail4: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-30.jpg"
-thumbnail5: "../../images/article/jejakurcaci_ajoon_muklay_couplesession-37.jpg"
 ---
 
 
