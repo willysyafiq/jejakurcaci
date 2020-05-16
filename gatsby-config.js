@@ -70,6 +70,18 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-sitemap`,
+		{
+			resolve: `gatsby-plugin-modal-routing`,
+			options: {
+			  // A selector to set react-modal's app root to, default is `#___gatsby`
+			  // See http://reactcommunity.org/react-modal/accessibility/#app-element
+			  appElement: '#___gatsby',
+	  
+			  // Object of props that will be passed to the react-modal container
+			  // See http://reactcommunity.org/react-modal/#usage
+			  modalProps: { },
+			}
+		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.app/offline
 		// 'gatsby-plugin-offline',

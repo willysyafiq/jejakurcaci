@@ -11,6 +11,7 @@ import ArrowRBlack from '../images/arrow-right-black.svg';
 import NextPhotography from "../components/next-photography.js";
 
 
+
 export const query = graphql`
     query(
         $slug: String!
@@ -148,12 +149,15 @@ const photography = (props) => {
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="photography/carousel/masami&daiki">
+                                        {/* <Link to="photography/carousel/masami&daiki"> */}
                                             <div className="see-all-thumb">
                                                 <div className="columns">
                                                     <div className="column is-8">
                                                         <div>
-                                                            <Link to="/photography/carousel/masami&daiki">See All Images</Link> 
+                                                            {/* <Link to="/photography/carousel/masami&daiki">See All Images</Link>  */}
+                                                            <Link to="/carousel/" state={{ modal: true }} > 
+                                                                Login
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                     <div className="column is-4">
@@ -161,7 +165,7 @@ const photography = (props) => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </Link>
+                                        {/* </Link> */}
                                     </div>
                                 </div>
                             </div>
