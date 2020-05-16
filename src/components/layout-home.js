@@ -8,10 +8,7 @@ import Footer from './footer';
 import ReadTheStories from './read-the-stories';
 import Subscription from './subscription';
 import RecentWorks from './recent-works';
-import { graphql, StaticQuery } from 'gatsby';
-import ArrowRBlack from '../images/arrow-right-black.svg';
-import featured2 from '../images/image-2.png';
-import { Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 
 

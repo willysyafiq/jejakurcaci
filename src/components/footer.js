@@ -19,9 +19,9 @@ const Footer = () => (
     <div className="column is-3 column-border">
       <h4>SOCIAL</h4>
       <ul>
-        <li><a href="https://www.instagram.com/jejakkurcaci/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com/Jejakurcaci-289920665021670/" target="_blank">Facebook</a></li>
-        <li><a href="https://id.pinterest.com/effendidani/jejakurcaci/" target="_blank">Pinterest</a></li>
+        <li><a href="https://www.instagram.com/jejakkurcaci/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/Jejakurcaci-289920665021670/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://id.pinterest.com/effendidani/jejakurcaci/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
       </ul>
     </div>
     <div className="column is-5 column-border">

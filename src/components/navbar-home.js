@@ -40,17 +40,17 @@ const NavbarHome = () => (
 						<div className="column is-4">
 							<div className="level-right">
 								<span className="social-logo">
-									<a href="https://www.instagram.com/jejakkurcaci/" target="_blank">
+									<a href="https://www.instagram.com/jejakkurcaci/" target="_blank" rel="noopener noreferrer">
 										<img className="image social-logo" src={InstagramBlack} alt="Instagram Icon" />	
 									</a>
 								</span>
 								<span className="social-logo">
-									<a href="https://www.facebook.com/Jejakurcaci-289920665021670/" target="_blank">
+									<a href="https://www.facebook.com/Jejakurcaci-289920665021670/" target="_blank" rel="noopener noreferrer">
 										<img className="image social-logo" src={FacebookBlack} alt="Facebook Icon" />
 									</a>
 								</span>
 								<span className="social-logo">
-									<a href="https://id.pinterest.com/effendidani/jejakurcaci/" target="_blank">
+									<a href="https://id.pinterest.com/effendidani/jejakurcaci/" target="_blank" rel="noopener noreferrer">
 										<img className="image social-logo" src={PinterestBlack} alt="Pinterest Icon" />
 									</a>
 								</span>

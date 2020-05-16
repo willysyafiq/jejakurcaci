@@ -5,9 +5,7 @@ import NavbarPhotography from './navbar-photography';
 import SideMenu from './side-menu';
 import Subscription from './subscription';
 import Footer from './footer';
-import { graphql, StaticQuery } from 'gatsby';
 import { Link } from 'gatsby';
-import HeroSlider from './hero-slider';
 import ArrowRBlack from '../images/arrow-right-black.svg';
 import Image1 from '../images/article/jejakurcaci_masami_daiki_couplesession-3.jpg';
 

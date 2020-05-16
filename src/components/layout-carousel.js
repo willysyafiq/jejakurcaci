@@ -40,13 +40,13 @@ const LayoutCarousel = ({ children }) => (
                         <p className="caption">Cat ipsum dolor sit amet, mark territory. Pounce on unsuspecting person murr i hate humans they are so annoying so while happily ignoring when being called for making bread on the bathrobe for show belly. Milk the cow scratch the furniture, and get scared by doggo also cucumerro . Scratch the furniture russian blue fight own tail cereal boxes make for five star accommodation and lick human with sandpaper tongue.</p>
                         <div className="share">
                             <p>SHARE</p>
-                            <a href="#">
+                            <a href="https://www.facebook.com/Jejakurcaci-289920665021670/" target="_blank" rel="noopener noreferrer">
                                 <img className="image social-logo" src={FacebookBlack} alt="Facebook Icon" />
                             </a>
-                            <a href="#">
+                            <a href="https://id.pinterest.com/effendidani/jejakurcaci/" target="_blank" rel="noopener noreferrer">
                                 <img className="image social-logo" src={PinterestBlack} alt="Pinterest Icon" />
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/jejakkurcaci/" target="_blank" rel="noopener noreferrer">
                                 <img className="image social-logo" src={InstagramBlack} alt="Instagram Icon" />
                             </a>
                         </div>

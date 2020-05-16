@@ -123,37 +123,37 @@ const photography = (props) => {
                                 </div>
                                 <div className="columns is-multiline">
                                     <div className="column is-4">
-                                        <Link to="/carousel">
+                                        <Link to="photography/carousel/masami&daiki">
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail1.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="/carousel">
+                                        <Link to="photography/carousel/masami&daiki">
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail2.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="/carousel">
+                                        <Link to="photography/carousel/masami&daiki">
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail3.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="/carousel">
+                                        <Link to="photography/carousel/masami&daiki">
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail4.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="/carousel">
+                                        <Link to="photography/carousel/masami&daiki">
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail5.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="/carousel">
+                                        <Link to="photography/carousel/masami&daiki">
                                             <div className="see-all-thumb">
                                                 <div className="columns">
                                                     <div className="column is-8">
                                                         <div>
-                                                            <Link to="/carousel">See All Images</Link> 
+                                                            <Link to="/photography/carousel/masami&daiki">See All Images</Link> 
                                                         </div>
                                                     </div>
                                                     <div className="column is-4">

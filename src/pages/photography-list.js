@@ -166,9 +166,9 @@ const PhotographyList = () => {
                 <div className="columns is-multiline pagination-section">
                     <div className="column is-12">
                         <span>
-                            <button className="arrow-l"><img src={ArrowLBlack} /></button>
+                            <button className="arrow-l"><img src={ArrowLBlack} alt="arrow prev" /></button>
                             <span className="page"> PAGE <span className="page-number"> 1/6 </span></span>
-                            <button className="arrow-r"><img src={ArrowRBlack} /></button>
+                            <button className="arrow-r"><img src={ArrowRBlack} alt="arrow next" /></button>
                         </span>
                         
                     </div>

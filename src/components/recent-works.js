@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from "gatsby-image";
 import ArrowRBlack from '../images/arrow-right-black.svg';
-import featured2 from '../images/image-2.png';
 
 const RecentWorks = () => {
 

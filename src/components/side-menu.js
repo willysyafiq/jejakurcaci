@@ -17,15 +17,15 @@ const SideMenu = () => (
                 <div className="column is-8 first-half">
                     <ul>
                         <li>
-                            <a href="#">LOVE STORIES</a>
+                            <Link to="#">LOVE STORIES</Link>
                             <div className="menu-sub">
                                 <div className="columns">
                                     <div className="column is-7">
                                         <ul>
-                                            <li><a href="#">Couples and Lovebirds <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
-                                            <li><a href="#">Ceremonials <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
-                                            <li><a href="#">Tying the Knot <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
-                                            <li><a href="#">Folks and Families <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
+                                            <li><Link to="/">Couples and Lovebirds <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
+                                            <li><Link to="/">Ceremonials <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
+                                            <li><Link to="/">Tying the Knot <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
+                                            <li><Link to="/">Folks and Families <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
                                         </ul>
                                     </div>
                                     <div className="column is-5">
@@ -40,15 +40,15 @@ const SideMenu = () => (
                             </div>
                         </li>
                         <li>
-                            <a href="#">PROJECTS</a>
+                            <Link to="/">PROJECTS</Link>
                             <div className="menu-sub">
                                 <div className="columns">
                                     <div className="column is-7">
                                         <ul>
-                                            <li><a href="#">Editorials <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
-                                            <li><a href="#">Portraits <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
-                                            <li><a href="#">Wanderlust <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
-                                            <li><a href="#">Miscellanous <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
+                                            <li><Link to="/">Editorials <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
+                                            <li><Link to="/">Portraits <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
+                                            <li><Link to="/">Wanderlust <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
+                                            <li><Link to="/">Miscellanous <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
                                         </ul>
                                     </div>
                                     <div className="column is-5">
@@ -63,14 +63,14 @@ const SideMenu = () => (
                             </div>
                         </li>
                         <li>
-                            <a href="#">JOURNAL</a>
+                            <Link to="/">JOURNAL</Link>
                             <div className="menu-sub">
                                 <div className="columns">
                                     <div className="column is-7">
                                         <ul>
-                                            <li><a href="#">Pople <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
-                                            <li><a href="#">Places <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
-                                            <li><a href="#">Other Stories <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></a></li>
+                                            <li><Link to="/">Pople <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
+                                            <li><Link to="/">Places <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
+                                            <li><Link to="/">Other Stories <img className="image chevron-menu" src={chevronRight} alt="chevron right" /></Link></li>
                                         </ul>
                                     </div>
                                     <div className="column is-5">
@@ -85,7 +85,7 @@ const SideMenu = () => (
                             </div>
                         </li>
                         <li>
-                            <a className="no-bot-border"  href="#">ABOUT</a>
+                            <Link to="/" className="no-bot-border">ABOUT</Link>
                         </li>
                     </ul>       
                 </div>
