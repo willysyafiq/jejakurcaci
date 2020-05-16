@@ -59,6 +59,7 @@ const RecentWorks = () => {
                         fields{
                             slug
                         }
+                        excerpt(pruneLength: 180)
                     }
                 }
             } 
@@ -99,6 +100,9 @@ const RecentWorks = () => {
                                 <p className="proj-cat">{edge.node.frontmatter.category}</p>
                                 <p className="proj-title">
                                     {edge.node.frontmatter.title}
+                                </p>
+                                <p className="proj-excerpt">
+                                    {edge.node.excerpt}
                                 </p>
                             </Link>
                         </div>
