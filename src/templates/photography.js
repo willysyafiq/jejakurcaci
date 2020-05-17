@@ -19,6 +19,9 @@ export const query = graphql`
     {
             regular:markdownRemark( fields:{ slug:{ eq: $slug } } )
             {
+                fields{
+                        slug
+                }
                 frontmatter{
                     title
                     category
@@ -71,6 +74,7 @@ export const query = graphql`
                 }
                 html
             }
+
     }
 `
 
@@ -154,8 +158,8 @@ const photography = (props) => {
                                                 <div className="columns">
                                                     <div className="column is-8">
                                                         <div>
-                                                            {/* <Link to="/photography/carousel/masami&daiki">See All Images</Link>  */}
-                                                            <Link to="/carousel/" state={{ modal: true }} > 
+                                                            {/* <Link to="/photography/masami&daiki_carousel" state={{ modal: true }} >  */}
+                                                            <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }} > 
                                                                 Login
                                                             </Link>
                                                         </div>
